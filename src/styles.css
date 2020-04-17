@@ -1,0 +1,25 @@
+.navbar-head {
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.jumbotron {
+  height: 646px;
+  background-image: url;
+}
+
+.main {
+  margin-top: 120px;
+  margin-bottom: 90px;
+}
+
+.container {
+  max-width: 1240px;
+}
+
+.news-card-1 {
+  border-top-left-radius: 8px;
+}
+
+.news-card-3 {
+  border-top-right-radius: 8px;
+}
