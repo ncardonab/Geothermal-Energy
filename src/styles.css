@@ -1,3 +1,4 @@
+/* Header */
 .navbar-head {
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
@@ -9,7 +10,7 @@
 
 .main {
   margin-top: 120px;
-  margin-bottom: 90px;
+  margin-bottom: 77px;
 }
 
 .container {
@@ -18,8 +19,63 @@
 
 .news-card-1 {
   border-top-left-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.news-card-2 {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .news-card-3 {
   border-top-right-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.new-img {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 130px;
+  width: 162px;
+  margin-left: 10px;
+}
+
+/* Section 1 */
+.section-1 {
+  height: 450px;
+  background-color: aqua;
+}
+
+/* Section 2 */
+.section-2 {
+  height: 400px;
+  background-color: burlywood;
+}
+
+.bg-blur {
+  position: absolute;
+  height: 156px;
+  transform: translateY(176px);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.section-2-container {
+  height: 400px;
+}
+
+.btn {
+  z-index: 9999;
+}
+
+/* Section 3 */
+.section-3 {
+  height: 556px;
+}
+
+/* Section 4 */
+.inolved {
+  height: 600px;
+  background-color: royalblue;
+}
+
+.inolved-img {
+  height: 200px;
 }
