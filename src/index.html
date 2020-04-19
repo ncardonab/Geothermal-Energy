@@ -14,7 +14,7 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <!-- Iconos Bootstrapw -->
+    <!-- Iconos Fontawesome -->
     <link
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       rel="stylesheet"
@@ -234,7 +234,7 @@
       </div>
     </section>
 
-    <!-- Section 4  -->
+    <!-- Section 4 | Projects & institution -->
     <section class="container inolved pt-3">
       <div class="">
         <h1 class="row bg-dark">
@@ -256,7 +256,7 @@
       <div>
         <h1 class="row bg-dark">Institutions involved</h1>
         <div class="row justify-content-around mt-4 inolved-img">
-          <!-- Para poner las imagenes de las intituciones -->
+          <!-- Para poner las imagenes de las instituciones -->
           <a href="#" class="col-sm-3 w-25 h-25 bg-danger"
             >hola<img src="" alt=""
           /></a>
@@ -273,36 +273,70 @@
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-      <div>
-        <h1>Contact</h1>
-        <h4>Looking forward to answering your email.</h4>
-        <input type="text" />
-        <input type="text" />
-        <input type="text" />
-        <h4>
-          By submiting you are with the
-          <a href="#"><span>terms and conditions</span></a>
-        </h4>
-        <button>
-          <a href="#">
-            <h3>Submit</h3>
-          </a>
-        </button>
-      </div>
-
-      <div>
-        <h1>Follow us:</h1>
-        <ul>
-          <!-- Logos de las redes sociales -->
-          <li><i></i></li>
-          <li><i></i></li>
-          <li><i></i></li>
-        </ul>
-        <span><h2>Geothermal Energy</h2></span>
-        <h3>Universidad de Medellin.</h3>
-        <h3>Medellin, Colombia</h3>
+    <!-- Footer | Contact & Social Media -->
+    <footer class="footer bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 my-3">
+            <h1 class="display-4 offset-1 text-light">
+              Contact
+            </h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <p class="h4 offset-1 font-weight-lighter text-light">
+              Looking forward to answering your email.
+            </p>
+          </div>
+          <form class="offset-1 col-sm-6">
+            <input
+              type="text"
+              class="form-control my-3"
+              id="name"
+              placeholder="Name"
+            />
+            <input
+              type="email"
+              class="form-control my-4"
+              id="email"
+              placeholder="Email"
+            />
+            <div class="form-group">
+              <textarea
+                class="form-control mt-4"
+                id="email"
+                placeholder="Message"
+                rows="5"
+              ></textarea>
+              <p class="form-text h5 text-light font-weight-lighter">
+                By submitting you are agree with the
+                <a href="/">terms and conditions.</a>
+              </p>
+            </div>
+            <button type="submit" class="btn btn-secondary btn-lg">
+              Submit
+            </button>
+          </form>
+          <div class="col-sm-4">
+            <div class="row offset-1">
+              <h3 class="col-sm-5 text-light">Follow Us:</h3>
+              <i class="col-sm-2 fa fa-facebook fa-2x text-info"></i>
+              <i class="col-sm-2 fa fa-twitter fa-2x text-info"></i>
+              <i class="col-sm-2 fa fa-envelope fa-2x text-info"></i>
+            </div>
+            <div class="row offset-1 mt-5">
+              <h3 class="col-sm-12 text-warning font-weight-lighter">
+                Geothermal Energy
+              </h3>
+            </div>
+            <div class="row offset-1">
+              <p class="col-sm-7 text-light">
+                Universidad de Medellin. Medellin, Colombia.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
