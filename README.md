@@ -6,18 +6,26 @@ Geothermal Energy Web Page.
 ```
 npm install
 ```
+or
+```
+yarn add
+```
 
 ## Compiles and hot-reloads for development
 ```
 npm run dev
 ```
+or
+```
+yarn run dev
+```
 
-## Start the server
+## Start the server (Not yet specified)
 ```
 npm start
 ```
 
-## Compiles & Minifies for production
+## Compiles & Minifies for production (Not yet specified)
 ```
 npm run build
 ```
