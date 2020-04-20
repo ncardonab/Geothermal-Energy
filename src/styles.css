@@ -5,7 +5,11 @@
 
 .jumbotron {
   height: 646px;
-  background-image: url;
+  background-image: url("..//public/img/Cascada.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: rgba(0, 0, 0, 0.36);
 }
 
 .main {
@@ -19,16 +23,35 @@
 
 .news-card-1 {
   border-top-left-radius: 8px;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: ease all 0.3s;
+  transform: scale(1);
 }
 
 .news-card-2 {
   background-color: rgba(0, 0, 0, 0.2);
+  transition: ease all 0.3s;
+  transform: scale(1);
 }
 
 .news-card-3 {
   border-top-right-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: ease all 0.3s;
+  transform: scale(1);
+}
+
+.news-card-1:hover {
   background-color: rgba(0, 0, 0, 0.1);
+  transform: scale(1.1);
+}
+.news-card-2:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  transform: scale(1.1);
+}
+.news-card-3:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  transform: scale(1.1);
 }
 
 .new-img {
@@ -38,16 +61,19 @@
   margin-left: 10px;
 }
 
-/* Section 1 */
+/* Section 1 | What is Geothermal Energy?  */
 .section-1 {
   height: 450px;
-  background-color: aqua;
 }
 
-/* Section 2 */
+/* Section 2 | Background */
 .section-2 {
   height: 400px;
-  background-color: burlywood;
+  background-image: url(..//public/img/background-fog.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .bg-blur {
@@ -65,22 +91,42 @@
   z-index: 9999;
 }
 
-/* Section 3 */
+/* Section 3 | Aims */
 .section-3 {
   height: 556px;
 }
 
-/* Section 4 */
-.inolved {
-  height: 600px;
-  background-color: royalblue;
+/* Section 4 | Projects & Institutions*/
+.section-4 {
+  height: 620px;
 }
 
-.inolved-img {
+.involved-img {
   height: 200px;
 }
 
-/* Footer */
+/* Partners */
+.partner.igcp {
+  width: 100px;
+  height: 126px;
+}
+
+.partner.iugs {
+  width: 161px;
+  height: 156px;
+}
+
+.partner.unesco {
+  width: 159px;
+  height: 116px;
+}
+
+.institutions {
+  width: 232px;
+  height: 100px;
+}
+
+/* Footer | Contact & Social Media*/
 .footer {
   height: 498px;
 }
