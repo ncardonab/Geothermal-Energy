@@ -6,6 +6,16 @@ const News = require("./news");
 
 const app = express();
 
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Origin, X-reqed-With, Content-Type, Accept"
+  );
+  next();
+});
+
 app.get("/news", (req, res) => {
   const baseUrl = "http://www.piensageotermia.com/";
 
@@ -13,7 +23,6 @@ app.get("/news", (req, res) => {
   async function getScrapedNews() {
     const news = await scrapeNewsFrom(baseUrl);
 
-    news.map(({ thumbnail }) => downloadImage(thumbnail));
     res.json(news);
   }
 });
@@ -36,6 +45,7 @@ function scrapeNewsFrom(baseUrl) {
         const news = $(main.children()[1]);
 
         const masterNews = $(news.children()[0]);
+        const masterNewsUrl = masterNews.find("a").attr("href");
         const masterThumbnailStr = masterNews.find("figure").attr("style");
         const masterThumbnail = masterThumbnailStr.slice(
           23,
@@ -46,20 +56,21 @@ function scrapeNewsFrom(baseUrl) {
           .find(".caption")
           .text()
           .replace(/^\s+|\s+$|\s+(?=\s)/g, "");
-        const masterFilename = masterThumbnail.slice(
-          masterThumbnail.lastIndexOf("/") + 1,
-          masterThumbnail.length
-        );
-        const masterPath = `public\\img\\downloads\\${masterFilename}`;
-        downloadImage(masterThumbnail);
 
         newsArray.push(
-          new News(masterPath, true, masterThumbnail, masterDate, masterCaption)
+          new News(
+            masterNewsUrl,
+            true,
+            masterThumbnail,
+            masterDate,
+            masterCaption
+          )
         );
 
         const secondaryNews = $(news.children()[1]);
         $(secondaryNews.children()).map((index, element) => {
           let child = $(element);
+          const newsUrl = child.find("a").attr("href");
           const thumbnailStr = child.find("figure").attr("style");
           const thumbnail = thumbnailStr.slice(23, thumbnailStr.length - 3);
           const date = child.find(".article-meta").text();
@@ -67,13 +78,8 @@ function scrapeNewsFrom(baseUrl) {
             .find(".caption")
             .text()
             .replace(/^\s+|\s+$|\s+(?=\s)/g, "");
-          const filename = thumbnail.slice(
-            thumbnail.lastIndexOf("/") + 1,
-            thumbnail.length
-          );
-          const path = `public\\img\\downloads\\${filename}`;
 
-          newsArray.push(new News(path, false, thumbnail, date, caption));
+          newsArray.push(new News(newsUrl, false, thumbnail, date, caption));
         });
 
         resolve(newsArray);
@@ -83,17 +89,4 @@ function scrapeNewsFrom(baseUrl) {
       }
     });
   });
-}
-
-function downloadImage(imageUri) {
-  download({
-    imgs: [
-      {
-        uri: imageUri,
-      },
-    ],
-    dest: "./public/img/downloads",
-  })
-    .then((info) => console.log(JSON.stringify(info)))
-    .then((error) => console.log(`Something went wrong: ${error}`));
 }

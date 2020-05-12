@@ -1,6 +1,6 @@
 class News {
-  constructor(path, featured, thumbnail, date, caption) {
-    this.path = path;
+  constructor(url, featured, thumbnail, date, caption) {
+    this.url = url;
     this.featured = featured;
     this.thumbnail = thumbnail;
     this.date = date;
