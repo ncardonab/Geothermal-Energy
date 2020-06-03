@@ -1,11 +1,16 @@
 const express = require("express");
+const morgan = require("morgan");
+const bodyParser = require("body-parser");
 const cheerio = require("cheerio");
-const download = require("node-image-downloader");
 const request = require("request");
-const News = require("./news");
+const News = require("./src/news");
+
+const hostname = "localhost";
+const port = 3000;
 
 const app = express();
-
+app.use(morgan("dev"));
+app.use(bodyParser.json());
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
@@ -16,21 +21,24 @@ app.use((req, res, next) => {
   next();
 });
 
-app.get("/news", (req, res) => {
-  const baseUrl = "http://www.piensageotermia.com/";
+app.get("/newsESP", (req, res) => {
+  const baseUrl = "https://www.piensageotermia.com/";
 
-  getScrapedNews();
-  async function getScrapedNews() {
-    const news = await scrapeNewsFrom(baseUrl);
-
+  scrapeNewsFrom(baseUrl).then((news) => {
     res.json(news);
-  }
+  });
 });
 
-const port = 3000;
+app.get("/newsENG", (req, res) => {
+  const baseUrl = "https://www.thinkgeoenergy.com/";
 
-app.listen(port, () => {
-  console.log(`Our BaaS is running on port ${port}`);
+  scrapeNewsFrom(baseUrl).then((news) => {
+    res.json(news);
+  });
+});
+
+app.listen(port, hostname, () => {
+  console.log(`Server running at http://${hostname}:${port}`);
 });
 
 function scrapeNewsFrom(baseUrl) {

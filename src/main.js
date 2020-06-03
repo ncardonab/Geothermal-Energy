@@ -7,23 +7,40 @@ function renderNews() {
     document.querySelector(".news-card-3"),
   ];
 
-  fetchNewsFromAPI().then((newsArray) => {
-    newsArray.map((news, index) => {
-      const { url, thumbnail, caption } = news;
-      const aTag = newsCards[index].children[1];
-      const imgTagContainer = newsCards[index].children[0];
-      const image = document.createElement("img");
+  fetchNewsFrom("newsESP").then((newsArray) => {
+    const news = newsArray[0];
+    const { url, thumbnail, caption } = news;
 
-      image.setAttribute("src", thumbnail);
-      imgTagContainer.appendChild(image);
-      aTag.setAttribute("href", url);
-      aTag.textContent = caption;
+    const aTag = newsCards[2].children[1];
+    const imgTagContainer = newsCards[2].children[0];
+    const image = document.createElement("img");
+
+    image.setAttribute("src", thumbnail);
+    imgTagContainer.appendChild(image);
+    aTag.setAttribute("href", url);
+    aTag.textContent = caption;
+  });
+
+  fetchNewsFrom("newsENG").then((newsArray) => {
+    newsArray.map((news, index) => {
+      if (index < 2) {
+        const { url, thumbnail, caption } = news;
+
+        const aTag = newsCards[index].children[1];
+        const imgTagContainer = newsCards[index].children[0];
+        const image = document.createElement("img");
+
+        image.setAttribute("src", thumbnail);
+        imgTagContainer.appendChild(image);
+        aTag.setAttribute("href", url);
+        aTag.textContent = caption;
+      }
     });
   });
 }
 
-function fetchNewsFromAPI() {
-  const baseUrl = "http://localhost:3000/news";
+function fetchNewsFrom(endpoint) {
+  const baseUrl = `http://localhost:3000/${endpoint}`;
 
   return fetch(baseUrl)
     .then((response) => response.json())
