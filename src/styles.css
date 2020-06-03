@@ -107,10 +107,15 @@
 }
 
 .new-img {
-  background-color: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(0, 0, 0, 0.5); */
   height: 130px;
   width: 162px;
   margin-left: 10px;
+}
+
+.new-img > img {
+  height: 130px;
+  width: 192px;
 }
 
 .notch {
