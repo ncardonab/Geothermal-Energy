@@ -16,7 +16,7 @@
 
 .jumbotron {
   height: 646px;
-  background-image: url("..//public/img/Cascada.png");
+  background-image: url("../public/img/Cascada.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
