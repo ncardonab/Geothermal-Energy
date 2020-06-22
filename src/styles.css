@@ -139,7 +139,7 @@
 /* Section 2 | Background */
 .section-2 {
   height: 400px;
-  background-image: url(..//public/img/background-fog.png);
+  background-image: url(../public/img/background-fog.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -224,7 +224,7 @@
 }
 
 .view-more-icon {
-  background: url(..\\public\\assets\\view_more.svg);
+  background: url(..\\public\\img\\view_more.svg);
   height: 20px;
   width: 20px;
   display: inline-block;

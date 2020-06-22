@@ -16,7 +16,7 @@
 
 .jumbotron {
   height: 646px;
-  background-image: url(C:\Users\nclsc\Developer\Geo-Energy-project\docs/public/img/Cascada.png);
+  background-image: url(../images/Cascada.39af3b.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -139,7 +139,7 @@
 /* Section 2 | Background */
 .section-2 {
   height: 400px;
-  background-image: url(C:\Users\nclsc\Developer\Geo-Energy-project\docs/public/img/background-fog.png);
+  background-image: url(../images/background-fog.227ef4.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -224,7 +224,7 @@
 }
 
 .view-more-icon {
-  background: url(C:\Users\nclsc\Developer\Geo-Energy-project\docs/public/assets/view_more.svg);
+  background: url(../images/view_more.d431ca.svg);
   height: 20px;
   width: 20px;
   display: inline-block;

@@ -4,7 +4,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   entry: {
-    app: "./src/main.js",
+    app: ["@babel/polyfill", "./src/main.js"],
   },
   output: {
     path: path.resolve(__dirname, "docs"),
@@ -15,6 +15,10 @@ module.exports = {
   },
   module: {
     rules: [
+      {
+        test: /\.js$/,
+        loader: "babel-loader",
+      },
       {
         test: /\.css$/,
         use: [
@@ -29,28 +33,31 @@ module.exports = {
       },
       {
         test: /\.(png|jpe?g|gif|PNG|svg)$/,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "[path][name].[ext]",
-            },
+        use: {
+          loader: "file-loader",
+          options: {
+            name: "[name].[hash:6].[ext]",
+            outputPath: "images",
+            publicPath: "../images",
+            emitFile: true,
+            // esModule: false,
           },
-        ],
+        },
       },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
+      filename: "html/index.html",
       template: "./src/index.html",
-      // minify: {
-      //   collapseWhitespace: true,
-      //   removeComments: true,
-      //   removeRedundantAttributes: true,
-      //   removeScriptTypeAttributes: true,
-      //   removeStyleLinkTypeAttributes: true,
-      //   useShortDoctype: true,
-      // },
+      minify: {
+        collapseWhitespace: true,
+        removeComments: true,
+        removeRedundantAttributes: true,
+        removeScriptTypeAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        useShortDoctype: true,
+      },
     }),
     new MiniCssExtractPlugin({
       filename: "css/app.bundle.css",
