@@ -6,7 +6,7 @@ const request = require("request");
 const News = require("./src/news");
 
 const hostname = "localhost";
-const port = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 
 const app = express();
 app.use(morgan("dev"));
@@ -38,7 +38,7 @@ app.get("/newsENG", (req, res) => {
 });
 
 app.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}`);
+  console.log(`Server running at http://${hostname}:${PORT}`);
 });
 
 function scrapeNewsFrom(baseUrl) {
