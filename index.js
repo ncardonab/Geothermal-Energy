@@ -24,20 +24,28 @@ app.use((req, res, next) => {
 app.get("/newsESP", (req, res) => {
   const baseUrl = "https://www.piensageotermia.com/";
 
-  scrapeNewsFrom(baseUrl).then((news) => {
-    res.json(news);
-  });
+  scrapeNewsFrom(baseUrl)
+    .then((news) => {
+      res.statusCode = 200;
+      res.setHeader("Content-Type", "application/json");
+      res.json(news);
+    })
+    .catch((err) => next(err));
 });
 
 app.get("/newsENG", (req, res) => {
   const baseUrl = "https://www.thinkgeoenergy.com/";
 
-  scrapeNewsFrom(baseUrl).then((news) => {
-    res.json(news);
-  });
+  scrapeNewsFrom(baseUrl)
+    .then((news) => {
+      res.statusCode = 200;
+      res.setHeader("Content-Type", "application/json");
+      res.json(news);
+    })
+    .catch((err) => next(err));
 });
 
-app.listen(port, hostname, () => {
+app.listen(PORT, "0.0.0.0", () => {
   console.log(`Server running at http://${hostname}:${PORT}`);
 });
 
