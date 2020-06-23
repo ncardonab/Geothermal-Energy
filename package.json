@@ -4,13 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "node index.js",
     "dev": "live-server --open=src/",
     "clean": "rimraf dist",
     "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
     "imagemin": "imagemin public/img/* --out-dir=dist/img",
     "usemin": "usemin src/index.html -d dist --htmlmin -o dist/index.html",
-    "build:npm": "yarn run clean && yarn run imagemin && yarn run copyfonts && yarn run usemin",
+    "build:npm": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
     "build": "webpack -p",
     "build:dev": "webpack -d"
   },
@@ -22,7 +22,6 @@
     "file-loader": "^6.0.0",
     "html-loader": "^1.1.0",
     "mini-css-extract-plugin": "^0.9.0",
-    "nodemon": "^2.0.3",
     "rimraf": "^3.0.2",
     "style-loader": "^1.2.1"
   },
