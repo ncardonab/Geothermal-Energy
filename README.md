@@ -13,25 +13,23 @@ Todas las tareas deben seguir este mismo proceso para ser entregadas y poder hac
 Se hará merge de `develop` en `master` **solamente** antes de realizar el deploy de cada entrega y eso lo podrá hacer únicamente Nicolás Cardona.
 
 ## Initial Setup
-Downloading Yarn: 
-https://classic.yarnpkg.com/en/docs/install/#windows-stable
-
 ## Project Setup
 ```
-yarn add
+npm install
 ```
 
 ## Compiles and hot-reloads for development
 ```
-yarn run dev
+npx webpack-dev-server or npm run dev
 ```
 
-## Start the server (Not yet specified)
+## Start the server (Already Deployed, instead use https://geo-energy-api.herokuapp.com/[the requested endpoint] )
+### But you can run the local server by typing
 ```
-npm start
+npm run start
 ```
 
-## Compiles & Minifies for production (Not yet specified)
+## Compiles & Minifies for production
 ```
 npm run build
 ```
