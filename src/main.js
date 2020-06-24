@@ -42,9 +42,11 @@ function renderNews() {
 }
 
 function fetchNewsFrom(endpoint) {
-  const baseUrl = `http://localhost:3000/${endpoint}`;
+  const herokuDomain = "geo-energy-api.herokuapp.com";
+  const baseUrl = `https://${herokuDomain}/${endpoint}`;
 
   return fetch(baseUrl)
     .then((response) => response.json())
-    .then((data) => data);
+    .then((data) => data)
+    .catch((err) => console.log(err));
 }
