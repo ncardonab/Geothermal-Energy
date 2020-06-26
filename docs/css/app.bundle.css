@@ -237,7 +237,12 @@ h4 {
 
 /* Footer | Contact & Social Media*/
 .footer {
-  height: 498px;
+  height: 30vh;
+}
+
+.line {
+  border-bottom: 1px solid #ffffff;
+  width: 75vw;
 }
 
 /* View more button styles */
