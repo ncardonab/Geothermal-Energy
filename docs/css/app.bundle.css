@@ -14,13 +14,52 @@
   background-color: rgba(255, 255, 255, 0.876);
 }
 
+.navbar-brand {
+  font-size: 17.5px;
+}
+
+.nav-item {
+  font-size: 14px;
+}
+
+.btn {
+  border-radius: 3.5px;
+  font-size: 14px;
+}
+
 .jumbotron {
-  height: 646px;
+  height: 100vh;
   background-image: url(../images/Cascada.39af3b.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: rgba(0, 0, 0, 0.36);
+  opacity: rgba(212, 172, 172, 0.36);
+}
+
+.display-4 {
+  font-size: 49px;
+}
+
+.light-text {
+  font-size: 14px;
+}
+
+.lead {
+  font-size: 17.5px;
+}
+
+h1 {
+  font-size: 35px;
+  font-weight: 500;
+  /* margin-top: 14px;
+  margin-bottom: 14px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px; */
+}
+
+h4 {
+  font-size: 21px;
+  font-weight: 500;
 }
 
 .main {
