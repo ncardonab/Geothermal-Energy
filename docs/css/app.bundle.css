@@ -318,3 +318,51 @@ h4 {
   transition: ease all 0.5s;
 }
 
+/* Team and Members */
+
+.secretary {
+  height: 75vh;
+  background-image: url("../images/Volcan Stromboli.fbb575.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.temporary {
+  height: 100vh;
+  background-color: black;
+}
+
+/* Section 2 | Secretary */
+.secretary-info {
+  transform: translateY(160px);
+}
+
+.secretary-photo {
+  height: 100px;
+  width: 100px;
+}
+
+.bg-blur-secretary {
+  height: 25vh;
+}
+
+.country-pill {
+  position: absolute;
+  width: 400px;
+  background-color: rgba(28, 28, 28, 1);
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  right: 0;
+}
+
+.country-pill > div > p {
+  line-height: 40px;
+}
+
+.country-pill > div > img {
+  height: 40px;
+  width: 40px;
+}
+

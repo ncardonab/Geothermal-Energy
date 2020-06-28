@@ -59,6 +59,18 @@ module.exports = {
         useShortDoctype: true,
       },
     }),
+    new HtmlWebpackPlugin({
+      filename: "html/team.html",
+      template: "./src/team.html",
+      minify: {
+        collapseWhitespace: true,
+        removeComments: true,
+        removeRedundantAttributes: true,
+        removeScriptTypeAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        useShortDoctype: true,
+      },
+    }),
     new MiniCssExtractPlugin({
       filename: "css/app.bundle.css",
     }),
