@@ -12,7 +12,7 @@
     "usemin": "usemin src/index.html -d dist --htmlmin -o dist/index.html",
     "build:npm": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
     "build": "webpack -p",
-    "build:dev": "webpack -d"
+    "build:dev": "webpack --watch -d"
   },
   "keywords": [],
   "author": "Nicolas Cardona",
