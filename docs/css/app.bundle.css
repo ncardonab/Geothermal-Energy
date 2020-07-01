@@ -366,3 +366,97 @@ h4 {
   width: 40px;
 }
 
+/* Section 3 | Involved institutions around the world */
+.institutions-section {
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+.continent-btn {
+  width: 160px;
+  background-color: #585858;
+  border-style: none;
+}
+
+.country-btn {
+  background-color: #585858;
+  border-style: none;
+}
+
+.country-btn:hover {
+  background-color: #7e7e7e;
+}
+
+.rounded-flag {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  max-width: 25px;
+  max-height: 25px;
+  border-radius: 50%;
+  bottom: 4px;
+  left: 5px;
+}
+
+.card {
+  width: 318.77px;
+  height: 236px;
+  border-radius: 15px;
+  border-style: none;
+  transition: ease all 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  transition: ease all 0.3s;
+}
+
+.card-img-top {
+  height: 161.24px;
+  width: 318.77px;
+  background-color: #474747;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  box-shadow: 2px 2px 18px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+  background-color: #e6e6e6;
+  border-radius: 15px;
+  transform: translateY(-13px);
+  transition: ease all 0.3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-body:hover {
+  transform: scale(1.06);
+  transition: ease all 0.3s;
+  cursor: pointer;
+}
+
+.card-body:hover > .card-notch {
+  background-color: rgb(255, 255, 255);
+  transition: ease all 0.3s;
+  transform: translateY(0px);
+}
+
+.logo {
+  position: absolute;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+}
+
+.card-notch {
+  width: 100px;
+  height: 9px;
+  background-color: rgba(255, 255, 255, 0);
+  position: absolute;
+  top: 0%;
+  top: -6px;
+  left: 109.385px;
+  border-radius: 8px;
+  transition: ease all 0.3s;
+  z-index: 2;
+}
+
