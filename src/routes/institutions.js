@@ -1,6 +1,6 @@
 const express = require("express");
 const institutionsRouter = express.Router();
-const institutions = require("../involved_institutions.json");
+const institutions = require("../shared/involved_institutions.json");
 
 institutionsRouter.route("/").get((req, res, next) => {
   res.statusCode = 200;
