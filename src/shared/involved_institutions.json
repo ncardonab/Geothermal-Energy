@@ -5,14 +5,14 @@
       "name": "Women In Geothermal",
       "contraction": "WING",
       "logo": "../images/wing.png",
-      "background": ""
+      "background": "../images/Women in geothermal Energy.png"
     },
     {
       "countryId": "1",
       "name": "Servicio Geológico Colombiano",
       "contraction": "SGC",
       "logo": "../images/Servicio Geológico Colombiano.jpg",
-      "background": ""
+      "background": "../images/Campus SGC.jpg"
     },
     {
       "countryId": "2",
