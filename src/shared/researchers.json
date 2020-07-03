@@ -1,0 +1,220 @@
+{
+  "researchers": [
+    {
+      "name": "Daniela",
+      "lasname": "Blessent",
+      "currentMembershipCountry": "Colombia",
+      "isLeader": true,
+      "isSecretary": false,
+      "linkedIn": "linkedin.com/in/daniela-blessent-533801aa",
+      "currentInstitution": "Universidad de Medellin | Ageocol"
+    },
+    {
+      "name": "Jasmin",
+      "lasname": "Raymond",
+      "currentMembershipCountry": "Canada",
+      "isLeader": true,
+      "isSecretary": false,
+      "linkedIn": "linkedin.com/in/jasminraymond",
+      "currentInstitution": "INRS (Institutnational de larecherchescientifique)"
+    },
+    {
+      "name": "Linda",
+      "lasname": "Daniele",
+      "currentMembershipCountry": "Chile",
+      "isLeader": true,
+      "isSecretary": false,
+      "linkedIn": "linkedin.com/in/linda-daniele-9a35bb39",
+      "currentInstitution": "AndeanGeothermalCenter ofExcellence(CEGA) –Universidad deChile"
+    },
+    {
+      "name": "Mar",
+      "lasname": "Alcaraz",
+      "currentMembershipCountry": "Argentina",
+      "isLeader": true,
+      "isSecretary": false,
+      "linkedIn": "linkedin.com/in/mar-alcaraz-1b5a3826",
+      "currentInstitution": "Instituto de Hidrología de Llanuras \"Dr. Eduardo Jorge Usunoff\" IHLLA"
+    },
+    {
+      "name": "Renato",
+      "lasname": "Somma",
+      "currentMembershipCountry": "Italy",
+      "isLeader": false,
+      "isSecretary": true,
+      "linkedIn": "linkedin.com/in/renato-somma-2a4180101",
+      "currentInstitution": "Istituto Nazionale di Geofisica e Vulcanologia INGV, Osservatorio Vesuviano"
+    },
+    {
+      "name": "Madelaine",
+      "lasname": "Constance",
+      "currentMembershipCountry": "United Kingdom",
+      "isLeader": false,
+      "isSecretary": false,
+      "linkedIn": "www.linkedin.com/in/madelainecherieconstance",
+      "currentInstitution": ""
+    },
+    {
+      "name": "Pablo",
+      "lasname": "Aguila",
+      "currentMembershipCountry": "New Zealand",
+      "isLeader": false,
+      "isSecretary": false,
+      "linkedIn": "https://www.linkedin.com/in/jpabustos/",
+      "currentInstitution": "University of Auckland, Faculty of Science, School of Environment"
+    },
+    {
+      "name": "Carlo",
+      "lasname": "Janna",
+      "currentMembershipCountry": "Italy",
+      "isLeader": false,
+      "isSecretary": false,
+      "linkedIn": "linkedin.com/in/carlo-janna-93448416",
+      "currentInstitution": "Università diPadova"
+    },
+    {
+      "name": "Ludmila",
+      "lasname": "Adam",
+      "currentMembershipCountry": "New Zealand",
+      "isLeader": false,
+      "isSecretary": false,
+      "linkedIn": "https://www.linkedin.com/in/ludmila-adam-5975a49/",
+      "currentInstitution": "University ofAuckland,Faculty ofScience,School ofEnvironment"
+    },
+    {
+      "name": "Jacqueline",
+      "lasname": "López",
+      "currentMembershipCountry": "Colombia",
+      "isLeader": false,
+      "isSecretary": false,
+      "linkedIn": "https://investigaciones-pure.udem.edu.co/es/persons/idalia-jacqueline-l%C3%B3pez-s%C3%A1nchez",
+      "currentInstitution": "Universidad de Medellin"
+    },
+    {
+      "name": "Claudia",
+      "lasname": "Alfaro",
+      "currentMembershipCountry": "Colombia",
+      "isLeader": false,
+      "isSecretary": false,
+      "linkedIn": "http://hidrotermales.sgc.gov.co/invtermales/",
+      "currentInstitution": "Colombian Geological Survey (SGC)"
+    },
+    {
+      "name": "Rene",
+      "lasname": "Therrien",
+      "currentMembershipCountry": "Canada",
+      "isLeader": false,
+      "isSecretary": false,
+      "linkedIn": "https://www.ggl.ulaval.ca/departement-et-professeurs/personnel-et-professeurs/professeurs-reguliers/professeur/show/therrien-rene/",
+      "currentInstitution": "Université Laval"
+    },
+    {
+      "name": "Fernando",
+      "lasname": "Rivas",
+      "currentMembershipCountry": "Mexico",
+      "isLeader": false,
+      "isSecretary": false,
+      "linkedIn": "https://www.linkedin.com/in/fernando-rivas-cruz/",
+      "currentInstitution": "Instituto Nacional de Electricidad y Energías Limpias del INEEL"
+    },
+    {
+      "name": "Ignasi",
+      "lasname": "Herms",
+      "currentMembershipCountry": "Spain",
+      "isLeader": false,
+      "isSecretary": false,
+      "linkedIn": "https://es.linkedin.com/in/ignasi-herms-96143033",
+      "currentInstitution": "Institut Cartogràfic i Geològic de Catalunya (ICGC) (Geological Survey of Catalonia)"
+    },
+    {
+      "name": "Jose",
+      "lasname": "Acuña",
+      "currentMembershipCountry": "Sweden",
+      "isLeader": false,
+      "isSecretary": false,
+      "linkedIn": "https://www.energy.kth.se/applied-thermodynamics/project-groups/geoenergy",
+      "currentInstitution": "KTH Royal Institute of Technology"
+    },
+    {
+      "name": "Salima",
+      "lasname": "Ouali",
+      "currentMembershipCountry": "Argelia",
+      "isLeader": false,
+      "isSecretary": false,
+      "linkedIn": "https://www.cder.dz/",
+      "currentInstitution": "Centre de développement des énergies renouvelables"
+    },
+    {
+      "name": "Oscar",
+      "lasname": "Llamosa",
+      "currentMembershipCountry": "Australia",
+      "isLeader": false,
+      "isSecretary": false,
+      "linkedIn": "https://www.linkedin.com/in/oscarllamosa/",
+      "currentInstitution": "Urge Energy"
+    },
+    {
+      "name": "Pietro",
+      "lasname": "Teatini",
+      "currentMembershipCountry": "Italy",
+      "isLeader": false,
+      "isSecretary": false,
+      "linkedIn": "http://www.dmsa.unipd.it/~teatini",
+      "currentInstitution": "Università diPadova"
+    },
+    {
+      "name": "Noureddine",
+      "lasname": "Benaouda",
+      "currentMembershipCountry": "Argelia",
+      "isLeader": false,
+      "isSecretary": false,
+      "linkedIn": "https://www.researchgate.net/profile/BENAOUDA_Nour-Eddine",
+      "currentInstitution": "Centre de développementdes énergies renouvelables"
+    },
+    {
+      "name": "Abdelhakim",
+      "lasname": "Djebara",
+      "currentMembershipCountry": "Argelia",
+      "isLeader": false,
+      "isSecretary": false,
+      "linkedIn": "https://www.researchgate.net/profile/Abdelhakim_Djebara",
+      "currentInstitution": "École Nationale polytechnique de Constantine"
+    },
+    {
+      "name": "Abdelkader",
+      "lasname": "Filali",
+      "currentMembershipCountry": "Argelia",
+      "isLeader": false,
+      "isSecretary": false,
+      "linkedIn": "https://www.researchgate.net/profile/Abdelkader_Filali",
+      "currentInstitution": "École Nationale polytechnique de Constantine"
+    },
+    {
+      "name": "Mohammed",
+      "lasname": "Moundji",
+      "currentMembershipCountry": "Argelia",
+      "isLeader": false,
+      "isSecretary": false,
+      "linkedIn": "https://www.linkedin.com/in/moundji-hadjiat-7392361b/",
+      "currentInstitution": "Centre de développementdes énergies renouvelables"
+    },
+    {
+      "name": "Hamza",
+      "lasname": "Semmari",
+      "currentMembershipCountry": "Argelia",
+      "isLeader": false,
+      "isSecretary": false,
+      "linkedIn": "https://www.researchgate.net/profile/Hamza_Semmari",
+      "currentInstitution": "École Nationale polytechnique de Constantine"
+    },
+    {
+      "name": "Sofiane",
+      "lasname": "Aberkane",
+      "currentMembershipCountry": "Argelia",
+      "isLeader": false,
+      "isSecretary": false,
+      "linkedIn": "https://www.researchgate.net/profile/Sofiane_Aberkane",
+      "currentInstitution": "École Nationale polytechnique de Constantine"
+    }
+  ]
+}

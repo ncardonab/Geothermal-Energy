@@ -6,6 +6,7 @@ const request = require("request");
 const News = require("./src/news");
 const continentsRouter = require("./src/routes/continents");
 const institutionsRouter = require("./src/routes/institutions");
+const researchersRouter = require("./src/routes/researchers");
 
 const hostname = "localhost";
 const PORT = process.env.PORT || 5000;
@@ -25,6 +26,7 @@ app.use((req, res, next) => {
 
 app.use("/continents", continentsRouter);
 app.use("/institutions", institutionsRouter);
+app.use("/researchers", researchersRouter);
 
 app.get("/newsESP", (req, res) => {
   const baseUrl = "https://www.piensageotermia.com/";
