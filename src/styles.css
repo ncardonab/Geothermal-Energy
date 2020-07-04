@@ -399,19 +399,27 @@ h4 {
 }
 
 .card {
+  /* Bootstrap class modified */
+  border-style: none;
+}
+
+.card-img-top {
+  border-style: none;
+}
+
+.institution-card {
   width: 318.77px;
   height: 236px;
   border-radius: 15px;
-  border-style: none;
   transition: ease all 0.3s;
 }
 
-.card:hover {
+.institution-card:hover {
   transform: scale(1.03);
   transition: ease all 0.3s;
 }
 
-.card-img-top {
+.institution-card-img-top {
   height: 161.24px;
   width: 318.77px;
   background-color: #474747;
@@ -420,7 +428,7 @@ h4 {
   box-shadow: 2px 2px 18px rgba(0, 0, 0, 0.2);
 }
 
-.card-body {
+.institution-card-body {
   background-color: #e6e6e6;
   border-radius: 15px;
   transform: translateY(-13px);
@@ -428,13 +436,13 @@ h4 {
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
-.card-body:hover {
+.institution-card-body:hover {
   transform: scale(1.06);
   transition: ease all 0.3s;
   cursor: pointer;
 }
 
-.card-body:hover > .card-notch {
+.institution-card-body:hover > .card-notch {
   background-color: rgb(255, 255, 255);
   transition: ease all 0.3s;
   transform: translateY(0px);
@@ -458,4 +466,62 @@ h4 {
   border-radius: 8px;
   transition: ease all 0.3s;
   z-index: 2;
+}
+
+/* Section 4 | Researchers Profiles */
+.researchers-section {
+  min-height: 628px;
+  background-color: #f4f4f7;
+}
+
+.researcher-img {
+  width: 233.84px;
+  height: 259.73;
+  border-radius: 11px;
+  border-style: none;
+}
+
+.fa-linkedin {
+  color: #878787;
+  cursor: pointer;
+  transition: ease all 0.3s;
+}
+
+.fa-linkedin:hover {
+  transform: scale(1.02);
+  transition: ease all 0.3s;
+}
+
+.previous-icon {
+  background: url("../public/img/Exclusion 2.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 25px;
+  width: 25px;
+  display: inline-block;
+  transform: translateY(2px);
+  cursor: pointer;
+  transition: ease all 0.3s;
+}
+
+.previous-icon:hover {
+  transform: scale(1.02);
+  transition: ease all 0.3s;
+}
+
+.next-icon {
+  background: url("../public/img/Exclusion 1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 25px;
+  width: 25px;
+  display: inline-block;
+  transform: translateY(2px);
+  cursor: pointer;
+  transition: ease all 0.3s;
+}
+
+.next-icon:hover {
+  transform: scale(1.02);
+  transition: ease all 0.3s;
 }

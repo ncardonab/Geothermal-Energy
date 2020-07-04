@@ -51,6 +51,8 @@ function fetchNewsFrom(endpoint) {
     .catch((err) => console.log(err));
 }
 
+// Secretary Section
+// Countries Buttons Rendering
 (function () {
   const continentsBtns = document.querySelector(".continents-btns-container");
 
@@ -120,6 +122,7 @@ function fetchNewsFrom(endpoint) {
   }
 })();
 
+// Institutions Cards Rendering
 (function () {
   const countriesBtns = document.querySelector(".countries-btns-container");
 
@@ -172,12 +175,12 @@ function fetchNewsFrom(endpoint) {
   function renderProjectCard(project) {
     const background =
       project.background !== ""
-        ? `<img src="${project.background}" class="card-img-top"></img>`
-        : `<div class="card-img-top"></div>`;
+        ? `<img src="${project.background}" class="institution-card-img-top"></img>`
+        : `<div class="institution-card-img-top"></div>`;
 
-    return `<div class="card">
+    return `<div class="card institution-card">
               ${background} 
-              <div class="card-body">
+              <div class="card-body institution-card-body">
                 <div class="row">
                   <div class="col-2">
                     <img src="${project.logo}" alt="" class="logo"></img>
@@ -193,6 +196,95 @@ function fetchNewsFrom(endpoint) {
   }
 })();
 
+// Reserchers
+(function () {
+  let counter = 0;
+
+  // First rendering
+  fetch("https://geo-energy-api.herokuapp.com/researchers")
+    .then((response) => response.json())
+    .then(({ researchers }) => {
+      renderResearchersProfiles(researchers, 0);
+    })
+    .catch((err) => console.log(err));
+
+  // Pagination buttons
+  const next = document.querySelector(".next-icon");
+  const previous = document.querySelector(".previous-icon");
+
+  // Next button
+  next.addEventListener("click", (event) => {
+    counter += 4;
+
+    fetch("https://geo-energy-api.herokuapp.com/researchers")
+      .then((response) => response.json())
+      .then(({ researchers }) => {
+        renderResearchersProfiles(researchers, counter);
+      });
+  });
+
+  // Previous button
+  previous.addEventListener("click", (event) => {
+    counter -= 4;
+
+    fetch("https://geo-energy-api.herokuapp.com/researchers")
+      .then((response) => response.json())
+      .then(({ researchers }) => {
+        renderResearchersProfiles(researchers, counter);
+      });
+  });
+
+  /**
+   * @description Iterates over the array from the given number and renders each one of the objects
+   * @param { Array } researchers
+   * @param { Number } counter
+   */
+  function renderResearchersProfiles(researchers, counter) {
+    // Cards container
+    const researchersCardsContainer = document.querySelector(
+      ".researchers-cards-container"
+    );
+    researchers.map((researcher, index) => {
+      console.log("Index:", index, researcher.name);
+      console.log("Counter: ", counter);
+      if (index >= counter && index < counter + 4) {
+        if (!researcher.isLeader && !researcher.isSecretary) {
+          const researcherCard = renderResearcherProfile(researcher);
+          researchersCardsContainer.innerHTML += researcherCard;
+        } else {
+          counter += 1;
+        }
+      }
+    });
+  }
+
+  /**
+   * @description Returns a pre scripted HTML Object
+   * @param {Object} researcher
+   */
+  function renderResearcherProfile(researcher) {
+    const profilePhoto = `../images/${researcher.name} ${researcher.lastname} ${researcher.currentMembershipCountry}.png`;
+
+    return `<div class="researcher-card col-3">
+              <img
+                src="${profilePhoto}"
+                alt="Researcher profile photo"
+                class="researcher-img"
+              />
+              <h4 class="researcher-fullname my-3">${researcher.name} ${researcher.lastname}</h4>
+              <p class="lead">${researcher.currentInstitution}</p>
+              <div style="border-bottom: 1px solid gray; width: 85%;"></div>
+              <a href="${researcher.linkedIn}" target="_blank">
+                <i class="fab fa-linkedin fa-2x my-2"></i>
+              </a>
+            </div>`;
+  }
+})();
+
+/**
+ * @description Removes all the childs from a given element
+ * @param { HTMLObjectElement } parent
+ */
 function removeAllChildNodes(parent) {
   while (parent.firstChild) {
     parent.removeChild(parent.firstChild);
