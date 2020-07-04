@@ -2,61 +2,61 @@
   "researchers": [
     {
       "name": "Daniela",
-      "lasname": "Blessent",
+      "lastname": "Blessent",
       "currentMembershipCountry": "Colombia",
       "isLeader": true,
       "isSecretary": false,
-      "linkedIn": "linkedin.com/in/daniela-blessent-533801aa",
+      "linkedIn": "https://linkedin.com/in/daniela-blessent-533801aa",
       "currentInstitution": "Universidad de Medellin | Ageocol"
     },
     {
       "name": "Jasmin",
-      "lasname": "Raymond",
+      "lastname": "Raymond",
       "currentMembershipCountry": "Canada",
       "isLeader": true,
       "isSecretary": false,
-      "linkedIn": "linkedin.com/in/jasminraymond",
-      "currentInstitution": "INRS (Institutnational de larecherchescientifique)"
+      "linkedIn": "https://linkedin.com/in/jasminraymond",
+      "currentInstitution": "INRS (Institutnational de la recherche scientifique)"
     },
     {
       "name": "Linda",
-      "lasname": "Daniele",
+      "lastname": "Daniele",
       "currentMembershipCountry": "Chile",
       "isLeader": true,
       "isSecretary": false,
-      "linkedIn": "linkedin.com/in/linda-daniele-9a35bb39",
-      "currentInstitution": "AndeanGeothermalCenter ofExcellence(CEGA) –Universidad deChile"
+      "linkedIn": "https://linkedin.com/in/linda-daniele-9a35bb39",
+      "currentInstitution": "Andean Geothermal Center of Excellence (CEGA) – Universidad de Chile"
     },
     {
       "name": "Mar",
-      "lasname": "Alcaraz",
+      "lastname": "Alcaraz",
       "currentMembershipCountry": "Argentina",
       "isLeader": true,
       "isSecretary": false,
-      "linkedIn": "linkedin.com/in/mar-alcaraz-1b5a3826",
+      "linkedIn": "https://linkedin.com/in/mar-alcaraz-1b5a3826",
       "currentInstitution": "Instituto de Hidrología de Llanuras \"Dr. Eduardo Jorge Usunoff\" IHLLA"
     },
     {
       "name": "Renato",
-      "lasname": "Somma",
+      "lastname": "Somma",
       "currentMembershipCountry": "Italy",
       "isLeader": false,
       "isSecretary": true,
-      "linkedIn": "linkedin.com/in/renato-somma-2a4180101",
+      "linkedIn": "https://linkedin.com/in/renato-somma-2a4180101",
       "currentInstitution": "Istituto Nazionale di Geofisica e Vulcanologia INGV, Osservatorio Vesuviano"
     },
     {
       "name": "Madelaine",
-      "lasname": "Constance",
+      "lastname": "Constance",
       "currentMembershipCountry": "United Kingdom",
       "isLeader": false,
       "isSecretary": false,
-      "linkedIn": "www.linkedin.com/in/madelainecherieconstance",
+      "linkedIn": "https://linkedin.com/in/madelainecherieconstance",
       "currentInstitution": ""
     },
     {
       "name": "Pablo",
-      "lasname": "Aguila",
+      "lastname": "Aguila",
       "currentMembershipCountry": "New Zealand",
       "isLeader": false,
       "isSecretary": false,
@@ -65,25 +65,25 @@
     },
     {
       "name": "Carlo",
-      "lasname": "Janna",
+      "lastname": "Janna",
       "currentMembershipCountry": "Italy",
       "isLeader": false,
       "isSecretary": false,
-      "linkedIn": "linkedin.com/in/carlo-janna-93448416",
-      "currentInstitution": "Università diPadova"
+      "linkedIn": "https://linkedin.com/in/carlo-janna-93448416",
+      "currentInstitution": "Università di Padova"
     },
     {
       "name": "Ludmila",
-      "lasname": "Adam",
+      "lastname": "Adam",
       "currentMembershipCountry": "New Zealand",
       "isLeader": false,
       "isSecretary": false,
       "linkedIn": "https://www.linkedin.com/in/ludmila-adam-5975a49/",
-      "currentInstitution": "University ofAuckland,Faculty ofScience,School ofEnvironment"
+      "currentInstitution": "University of Auckland, Faculty of Science, School of Environment"
     },
     {
       "name": "Jacqueline",
-      "lasname": "López",
+      "lastname": "López",
       "currentMembershipCountry": "Colombia",
       "isLeader": false,
       "isSecretary": false,
@@ -92,7 +92,7 @@
     },
     {
       "name": "Claudia",
-      "lasname": "Alfaro",
+      "lastname": "Alfaro",
       "currentMembershipCountry": "Colombia",
       "isLeader": false,
       "isSecretary": false,
@@ -101,7 +101,7 @@
     },
     {
       "name": "Rene",
-      "lasname": "Therrien",
+      "lastname": "Therrien",
       "currentMembershipCountry": "Canada",
       "isLeader": false,
       "isSecretary": false,
@@ -110,7 +110,7 @@
     },
     {
       "name": "Fernando",
-      "lasname": "Rivas",
+      "lastname": "Rivas",
       "currentMembershipCountry": "Mexico",
       "isLeader": false,
       "isSecretary": false,
@@ -119,7 +119,7 @@
     },
     {
       "name": "Ignasi",
-      "lasname": "Herms",
+      "lastname": "Herms",
       "currentMembershipCountry": "Spain",
       "isLeader": false,
       "isSecretary": false,
@@ -128,7 +128,7 @@
     },
     {
       "name": "Jose",
-      "lasname": "Acuña",
+      "lastname": "Acuña",
       "currentMembershipCountry": "Sweden",
       "isLeader": false,
       "isSecretary": false,
@@ -137,7 +137,7 @@
     },
     {
       "name": "Salima",
-      "lasname": "Ouali",
+      "lastname": "Ouali",
       "currentMembershipCountry": "Argelia",
       "isLeader": false,
       "isSecretary": false,
@@ -146,7 +146,7 @@
     },
     {
       "name": "Oscar",
-      "lasname": "Llamosa",
+      "lastname": "Llamosa",
       "currentMembershipCountry": "Australia",
       "isLeader": false,
       "isSecretary": false,
@@ -155,7 +155,7 @@
     },
     {
       "name": "Pietro",
-      "lasname": "Teatini",
+      "lastname": "Teatini",
       "currentMembershipCountry": "Italy",
       "isLeader": false,
       "isSecretary": false,
@@ -164,7 +164,7 @@
     },
     {
       "name": "Noureddine",
-      "lasname": "Benaouda",
+      "lastname": "Benaouda",
       "currentMembershipCountry": "Argelia",
       "isLeader": false,
       "isSecretary": false,
@@ -173,7 +173,7 @@
     },
     {
       "name": "Abdelhakim",
-      "lasname": "Djebara",
+      "lastname": "Djebara",
       "currentMembershipCountry": "Argelia",
       "isLeader": false,
       "isSecretary": false,
@@ -182,7 +182,7 @@
     },
     {
       "name": "Abdelkader",
-      "lasname": "Filali",
+      "lastname": "Filali",
       "currentMembershipCountry": "Argelia",
       "isLeader": false,
       "isSecretary": false,
@@ -191,7 +191,7 @@
     },
     {
       "name": "Mohammed",
-      "lasname": "Moundji",
+      "lastname": "Moundji",
       "currentMembershipCountry": "Argelia",
       "isLeader": false,
       "isSecretary": false,
@@ -200,7 +200,7 @@
     },
     {
       "name": "Hamza",
-      "lasname": "Semmari",
+      "lastname": "Semmari",
       "currentMembershipCountry": "Argelia",
       "isLeader": false,
       "isSecretary": false,
@@ -209,7 +209,7 @@
     },
     {
       "name": "Sofiane",
-      "lasname": "Aberkane",
+      "lastname": "Aberkane",
       "currentMembershipCountry": "Argelia",
       "isLeader": false,
       "isSecretary": false,
