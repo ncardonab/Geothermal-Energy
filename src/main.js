@@ -196,15 +196,20 @@ function fetchNewsFrom(endpoint) {
   }
 })();
 
-// Reserchers
+// Researchers
 (function () {
-  let counter = 0;
+  const paginationContainer = document.querySelector(".pagination-status");
+  const pagStatus = +paginationContainer.getAttribute("data-status"); // el + es para volverlo un número
 
   // First rendering
   fetch("https://geo-energy-api.herokuapp.com/researchers")
     .then((response) => response.json())
     .then(({ researchers }) => {
-      renderResearchersProfiles(researchers, 0);
+      researchers = researchers.filter(
+        (researcher) => !researcher.isLeader && !researcher.isSecretary
+      );
+      renderResearchersProfiles(researchers, pagStatus);
+      renderPaginationStatus(pagStatus, researchers.length);
     })
     .catch((err) => console.log(err));
 
@@ -214,25 +219,76 @@ function fetchNewsFrom(endpoint) {
 
   // Next button
   next.addEventListener("click", (event) => {
-    counter += 4;
-
     fetch("https://geo-energy-api.herokuapp.com/researchers")
       .then((response) => response.json())
       .then(({ researchers }) => {
-        renderResearchersProfiles(researchers, counter);
-      });
+        const previousState = +paginationContainer.getAttribute("data-status");
+        const numberOfPages =
+          +paginationContainer.textContent.split("/")[1] - 1;
+
+        if (previousState < numberOfPages * 4) {
+          paginationContainer.setAttribute(
+            "data-status",
+            (previousState + 4).toString()
+          );
+
+          const counter = +paginationContainer.getAttribute("data-status");
+
+          // Filtrando aquelllos investigadores que no sean ni lideres ni secretarios
+          researchers = researchers.filter(
+            (researcher) => !researcher.isLeader && !researcher.isSecretary
+          );
+
+          renderResearchersProfiles(researchers, counter);
+          renderPaginationStatus(counter, researchers.length);
+        }
+      })
+      .catch((err) => console.log(err));
   });
 
   // Previous button
   previous.addEventListener("click", (event) => {
-    counter -= 4;
-
     fetch("https://geo-energy-api.herokuapp.com/researchers")
       .then((response) => response.json())
       .then(({ researchers }) => {
-        renderResearchersProfiles(researchers, counter);
-      });
+        const previousState = +paginationContainer.getAttribute("data-status");
+
+        if (previousState > 0) {
+          paginationContainer.setAttribute(
+            "data-status",
+            (previousState - 4).toString()
+          );
+
+          const counter = +paginationContainer.getAttribute("data-status");
+
+          // Filtrando aquelllos investigadores que no sean ni lideres ni secretarios
+          researchers = researchers.filter(
+            (researcher) => !researcher.isLeader && !researcher.isSecretary
+          );
+
+          renderResearchersProfiles(researchers, counter);
+          renderPaginationStatus(counter, researchers.length);
+        }
+      })
+      .catch((err) => console.log(err));
   });
+
+  /**
+   * @description Update the paginations status
+   * @param {Number} currentStatus
+   * @param {Number} researchersQuantity
+   */
+  function renderPaginationStatus(currentStatus, researchersQuantity) {
+    const paginationStatus = document.querySelector(".pagination-status");
+
+    const currentPage = currentStatus / 4 + 1;
+
+    const pagsNumber = Math.ceil(researchersQuantity / 4);
+
+    const status = `${currentPage}/${pagsNumber}`;
+
+    paginationStatus.innerHTML = status;
+  }
 
   /**
    * @description Iterates over the array from the given number and renders each one of the objects
@@ -244,16 +300,14 @@ function fetchNewsFrom(endpoint) {
     const researchersCardsContainer = document.querySelector(
       ".researchers-cards-container"
     );
+
+    // Borrando todos las cartas para poder renderizar las nuevas
+    removeAllChildNodes(researchersCardsContainer);
+
     researchers.map((researcher, index) => {
-      console.log("Index:", index, researcher.name);
-      console.log("Counter: ", counter);
       if (index >= counter && index < counter + 4) {
-        if (!researcher.isLeader && !researcher.isSecretary) {
-          const researcherCard = renderResearcherProfile(researcher);
-          researchersCardsContainer.innerHTML += researcherCard;
-        } else {
-          counter += 1;
-        }
+        const researcherCard = renderResearcherProfile(researcher);
+        researchersCardsContainer.innerHTML += researcherCard; // injectando el 'HTML' creado
       }
     });
   }

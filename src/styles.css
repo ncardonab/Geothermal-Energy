@@ -493,7 +493,7 @@ h4 {
 }
 
 .previous-icon {
-  background: url("../public/img/Exclusion 2.svg");
+  background: url("../public/img/Exclusion 1.svg");
   background-repeat: no-repeat;
   background-position: center;
   height: 25px;
@@ -510,7 +510,7 @@ h4 {
 }
 
 .next-icon {
-  background: url("../public/img/Exclusion 1.svg");
+  background: url("../public/img/Exclusion 2.svg");
   background-repeat: no-repeat;
   background-position: center;
   height: 25px;
