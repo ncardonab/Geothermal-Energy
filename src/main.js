@@ -183,10 +183,12 @@ function fetchNewsFrom(endpoint) {
               <div class="card-body institution-card-body">
                 <div class="row">
                   <div class="col-2">
-                    <img src="${project.logo}" alt="" class="logo"></img>
+                    <img src="${project.logo}" alt="${project.name}" class="logo"></img>
                   </div>
                   <div class="col-10">
-                    <h5 class="card-title lead">${project.name}</h5>
+                    <a href="${project.website}" target="_blank">
+                      <h5 class="card-title ml-2">${project.name}</h5>
+                    </a>
                   </div>
                 </div>
                 <div class="card-notch"></div>

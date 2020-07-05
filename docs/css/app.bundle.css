@@ -408,7 +408,7 @@ h4 {
 }
 
 .institution-card {
-  width: 318.77px;
+  width: 256.75px;
   height: 236px;
   border-radius: 15px;
   transition: ease all 0.3s;
@@ -421,7 +421,7 @@ h4 {
 
 .institution-card-img-top {
   height: 161.24px;
-  width: 318.77px;
+  width: 256.75px;
   background-color: #474747;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -429,6 +429,7 @@ h4 {
 }
 
 .institution-card-body {
+  height: 85px;
   background-color: #e6e6e6;
   border-radius: 15px;
   transform: translateY(-13px);
@@ -462,10 +463,20 @@ h4 {
   position: absolute;
   top: 0%;
   top: -6px;
-  left: 109.385px;
+  left: 78.375px;
   border-radius: 8px;
   transition: ease all 0.3s;
   z-index: 2;
+}
+
+.card-title {
+  font-size: 14px;
+  font-weight: 300;
+  color: #030303;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 /* Section 4 | Researchers Profiles */
