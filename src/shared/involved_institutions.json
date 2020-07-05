@@ -77,7 +77,7 @@
       "name": "Institut National de la Recherche Scientifique",
       "contraction": "INRS",
       "logo": "../images/inrs.png",
-      "background": "../images/INSR imagen.jpg",
+      "background": "../images/INRS imagen.jpg",
       "website": "http://www.inrs.ca"
     },
     {
@@ -86,7 +86,7 @@
       "contraction": "laval",
       "logo": "../images/laval.png",
       "background": "../images/Univ Laval Canada.jpeg",
-      "website": "www.ulaval.ca"
+      "website": "https://www.ulaval.ca"
     },
     {
       "countryId": "6",
