@@ -6,21 +6,21 @@
       "contraction": "UdeM",
       "logo": "../images/Escudo_Universidad_de_Medellin.svg",
       "background": "../images/Colombia UdeM.jpg",
-      "website": "www.udem.edu.co"
+      "website": "https://www.udem.edu.co"
     },
     {
       "countryId": "1",
       "name": "Asociación Geotérmica Colombiana",
       "contraction": "AGEOCOL",
       "logo": "../images/AGEOCOL.png",
-      "background": "../images/Colombia AGEOCOL.png",
-      "website": "www.ageocol.org"
+      "background": "../images/Colombia AGEOCOL.jpg",
+      "website": "https://www.ageocol.org"
     },
     {
       "countryId": "1",
       "name": "Women In Geothermal",
       "contraction": "WING",
-      "logo": "../images/wing.png",
+      "logo": "../images/wing.svg",
       "background": "../images/Women in geothermal Energy.png",
       "website": "https://www.ageocol.org/wing-colombia"
     },
@@ -78,7 +78,7 @@
       "contraction": "INRS",
       "logo": "../images/inrs.png",
       "background": "../images/INSR imagen.jpg",
-      "website": "www.inrs.ca"
+      "website": "http://www.inrs.ca"
     },
     {
       "countryId": "6",
@@ -86,7 +86,7 @@
       "contraction": "laval",
       "logo": "../images/laval.png",
       "background": "../images/Univ Laval Canada.jpeg",
-      "website": "Université Laval"
+      "website": "www.ulaval.ca"
     },
     {
       "countryId": "6",
