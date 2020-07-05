@@ -2,178 +2,219 @@
   "projects": [
     {
       "countryId": "1",
+      "name": "Universidad de Medellín",
+      "contraction": "UdeM",
+      "logo": "../images/Escudo_Universidad_de_Medellin.svg",
+      "background": "../images/Colombia UdeM.jpg",
+      "website": "www.udem.edu.co"
+    },
+    {
+      "countryId": "1",
+      "name": "Asociación Geotérmica Colombiana",
+      "contraction": "AGEOCOL",
+      "logo": "../images/AGEOCOL.png",
+      "background": "../images/Colombia AGEOCOL.png",
+      "website": "www.ageocol.org"
+    },
+    {
+      "countryId": "1",
       "name": "Women In Geothermal",
       "contraction": "WING",
       "logo": "../images/wing.png",
-      "background": "../images/Women in geothermal Energy.png"
+      "background": "../images/Women in geothermal Energy.png",
+      "website": "https://www.ageocol.org/wing-colombia"
     },
     {
       "countryId": "1",
       "name": "Servicio Geológico Colombiano",
       "contraction": "SGC",
       "logo": "../images/Servicio Geológico Colombiano.jpg",
-      "background": "../images/Campus SGC.jpg"
+      "background": "../images/Campus SGC.jpg",
+      "website": "https://www.sgc.gov.co/"
     },
     {
       "countryId": "2",
       "name": "National Scientific and Technical Research Council",
       "contraction": "CONICET",
       "logo": "../images/conicet.png",
-      "background": ""
+      "background": "",
+      "website": "https://ihlla.conicet.gov.ar/"
     },
     {
       "countryId": "2",
       "name": "Instituto de Hidrologia de Llanuras",
       "contraction": "IHLLA",
       "logo": "../images/ihlla.png",
-      "background": ""
+      "background": "",
+      "website": "https://ihlla.conicet.gov.ar/"
     },
     {
       "countryId": "3",
       "name": "Centro de Excelencia en Geotermia de los Andes",
       "contraction": "CEGA",
       "logo": "../images/cega.jpg",
-      "background": ""
+      "background": "",
+      "website": "http://www.cega-uchile.cl/"
     },
     {
       "countryId": "4",
       "name": "Ministerio de Medio Ambiente, Gobierno de el Salvador",
       "contraction": "MARN",
       "logo": "../images/Ministerio de Medio Ambiente.png",
-      "background": ""
+      "background": "",
+      "website": "https://www.marn.gob.sv/"
     },
     {
       "countryId": "5",
       "name": "Instituto Nacional de Electricidad y Energías Limpias",
       "contraction": "INEEL",
       "logo": "../images/ineel.png",
-      "background": ""
+      "background": "",
+      "website": "https://www.gob.mx/ineel"
     },
     {
       "countryId": "6",
       "name": "Institut National de la Recherche Scientifique",
       "contraction": "INRS",
       "logo": "../images/inrs.png",
-      "background": ""
+      "background": "../images/INSR imagen.jpg",
+      "website": "www.inrs.ca"
     },
     {
       "countryId": "6",
       "name": "Université Laval",
       "contraction": "laval",
       "logo": "../images/laval.png",
-      "background": ""
+      "background": "../images/Univ Laval Canada.jpeg",
+      "website": "Université Laval"
     },
     {
       "countryId": "6",
       "name": "Gouvernement du Canada",
       "contraction": "Government of Canada",
       "logo": "../images/Government of Canada.png",
-      "background": ""
+      "background": "../images/Canada CanMet Energy.jpg",
+      "website": "https://www.nrcan.gc.ca/science-data/research-centres-labs/canmetenergy-research-centres/varennes-qc-research-centre/5761"
     },
     {
       "countryId": "8",
       "name": "Université de RENNES 1",
       "contraction": "RENNES 1",
       "logo": "../images/rennes.png",
-      "background": ""
+      "background": "",
+      "website": "https://www.univ-rennes1.fr/"
     },
     {
       "countryId": "8",
       "name": "Géosciences pour une Terre durable",
       "contraction": "BRGM",
       "logo": "../images/brgm.png",
-      "background": ""
+      "background": "",
+      "website": "https://www.brgm.fr/"
     },
     {
       "countryId": "9",
       "name": "Universitá Degli Studi de Padova",
       "contraction": "UDSP",
       "logo": "../images/padova.png",
-      "background": ""
+      "background": "",
+      "website": "https://www.unipd.it/"
     },
     {
       "countryId": "9",
       "name": "Instituto Nazionale di Geofisica e Vulcanologia",
       "contraction": "INGV",
       "logo": "../images/ingv.png",
-      "background": ""
+      "background": "../images/Slovenia GeoZS2.jpg",
+      "website": "http://www.ov.ingv.it/ov/"
     },
     {
       "countryId": "10",
       "name": "University of Mons",
       "contraction": "Mons",
       "logo": "../images/umons.png",
-      "background": ""
+      "background": "",
+      "website": "https://web.umons.ac.be/fr/"
     },
     {
       "countryId": "11",
       "name": "Geoloski Zavod Slovenije",
       "contraction": "GeoZS",
       "logo": "../images/GeoZS.jpg",
-      "background": ""
+      "background": "",
+      "website": "https://www.geo-zs.si/index.php/en/geozs-en/role-and-purpose-of-the-geozs"
     },
     {
       "countryId": "12",
       "name": "Iceland School of Energy",
       "contraction": "HR",
       "logo": "../images/hr.jpg",
-      "background": ""
+      "background": "../images/Iceland ISE.jpeg",
+      "website": "https://en.ru.is/ise/"
     },
     {
       "countryId": "13",
       "name": "Vetenskap Och Konst",
       "contraction": "KTH",
       "logo": "../images/kth.png",
-      "background": ""
+      "background": "",
+      "website": "https://www.kth.se/en"
     },
     {
       "countryId": "14",
       "name": "Institut Cartográphic i Geológic de Catalunya",
       "contraction": "ICGC",
       "logo": "../images/icgc.png",
-      "background": ""
+      "background": "",
+      "website": "https://www.icgc.cat/"
     },
     {
       "countryId": "15",
       "name": "Akita University",
       "contraction": "Akita",
       "logo": "../images/akita.jpg",
-      "background": ""
+      "background": "",
+      "website": "https://www.akita-u.ac.jp/shigen/eng/graduate/"
     },
     {
       "countryId": "16",
       "name": "Institute of Rock and Soil Mechanics, Chinese Academy of Sciences",
       "contraction": "IRSM",
       "logo": "../images/irsm.svg",
-      "background": ""
+      "background": "",
+      "website": "http://english.whrsm.cas.cn/"
     },
     {
       "countryId": "17",
       "name": "The University of Auckland",
       "contraction": "UA",
       "logo": "../images/University of Auckland.png",
-      "background": ""
+      "background": "",
+      "website": "https://www.auckland.ac.nz/en/science/about-the-faculty/school-of-environment.html"
     },
     {
       "countryId": "18",
       "name": "URGE energy",
       "contraction": "URGE",
       "logo": "../images/URGE Energy.jpg",
-      "background": ""
+      "background": "",
+      "website": ""
     },
     {
       "countryId": "19",
       "name": "École Nationale Polytechnique de Constantine",
       "contraction": "ENPC",
       "logo": "../images/enpc.png",
-      "background": ""
+      "background": "",
+      "website": "http://www.enp-constantine.dz/"
     },
     {
       "countryId": "19",
       "name": "Centre de Développement des Energies Renouvelables",
       "contraction": "CDER",
       "logo": "../images/cder.jpg",
-      "background": ""
+      "background": "../images/Algeria CDER.jpg",
+      "website": "https://www.cder.dz/"
     }
   ]
 }
