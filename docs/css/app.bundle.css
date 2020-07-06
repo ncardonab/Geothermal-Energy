@@ -389,8 +389,8 @@ h4 {
 
 .rounded-flag {
   position: absolute;
-  height: 25px;
-  width: 25px;
+  height: auto;
+  width: auto;
   max-width: 25px;
   max-height: 25px;
   border-radius: 50%;
@@ -451,9 +451,11 @@ h4 {
 
 .logo {
   position: absolute;
-  height: 45px;
-  width: 45px;
-  border-radius: 50%;
+  width: auto;
+  max-width: 45px;
+  height: auto;
+  max-height: 45px;
+  /* border-radius: 50%; */
 }
 
 .card-notch {
