@@ -71,6 +71,18 @@ module.exports = {
         useShortDoctype: true,
       },
     }),
+    new HtmlWebpackPlugin({
+      filename: "html/whatIsGeothermalEnergy.html",
+      template: "./src/whatIsGeothermalEnergy.html",
+      minify: {
+        collapseWhitespace: true,
+        removeComments: true,
+        removeRedundantAttributes: true,
+        removeScriptTypeAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        useShortDoctype: true,
+      },
+    }),
     new MiniCssExtractPlugin({
       filename: "css/app.bundle.css",
     }),

@@ -33,7 +33,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: rgba(212, 172, 172, 0.36);
 }
 
 .display-4 {
@@ -537,5 +536,25 @@ a:hover {
 .next-icon:hover {
   transform: scale(1.02);
   transition: ease all 0.3s;
+}
+
+/* What is Geothermal Energy? */
+
+.geothermal-energy-jumbotron {
+  height: 100vh;
+  background-image: url(../images/brown-soil-1437337.605124.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.background-blur {
+  background-color: rgba(255, 255, 255, 0.6);
+  height: 225px;
+  width: 90%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  position: absolute;
+  bottom: 0;
 }
 
