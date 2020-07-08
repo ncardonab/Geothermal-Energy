@@ -91,7 +91,7 @@
     {
       "countryId": "6",
       "name": "Gouvernement du Canada",
-      "contraction": "Government of Canada",
+      "contraction": "Government of Canada: CanMet Energy",
       "logo": "../images/Government of Canada.png",
       "background": "../images/Canada CanMet Energy.jpg",
       "website": "https://www.nrcan.gc.ca/science-data/research-centres-labs/canmetenergy-research-centres/varennes-qc-research-centre/5761"
@@ -101,7 +101,7 @@
       "name": "Université de RENNES 1",
       "contraction": "RENNES 1",
       "logo": "../images/rennes.png",
-      "background": "",
+      "background": "https://www.univ-rennes1.fr/sites/www.univ-rennes1.fr/files/styles/page_node/adaptive-image/public/pages/img_0967_21.jpg?itok=O8O4eBG4",
       "website": "https://www.univ-rennes1.fr/"
     },
     {

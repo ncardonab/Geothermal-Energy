@@ -71,6 +71,12 @@ h4 {
 }
 
 /* News Section */
+.cards-container {
+  width: 90%;
+  position: absolute;
+  bottom: 0px;
+}
+
 .news-card-1 {
   border-top-left-radius: 8px;
   background-color: rgba(255, 255, 255, 0.308);
