@@ -56,6 +56,11 @@ h1 {
   margin-inline-end: 0px; */
 }
 
+h3 {
+  font-size: 28px;
+  font-weight: 100;
+}
+
 h4 {
   font-size: 21px;
   font-weight: 500;
@@ -546,6 +551,7 @@ a:hover {
 
 /* What is Geothermal Energy? */
 
+/* Header | Section 1 */
 .geothermal-energy-jumbotron {
   height: 100vh;
   background-image: url(../images/brown-soil-1437337.605124.jpg);
@@ -562,5 +568,11 @@ a:hover {
   border-top-right-radius: 20px;
   position: absolute;
   bottom: 0;
+}
+
+/* Main objetive | Section 2*/
+.geothermal-energy-container-section-2 {
+  height: 68.54%;
+  background-color: rgb(255, 255, 255);
 }
 
