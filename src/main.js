@@ -84,42 +84,6 @@ function fetchNewsFrom(endpoint) {
         }
       });
   });
-
-  function renderSelectedContinentButtons(continent) {
-    const countriesButtonsContainer = document.querySelector(
-      ".countries-btns-container"
-    );
-
-    // Borrando los botones renderizados anteriormente
-    removeAllChildNodes(countriesButtonsContainer);
-
-    continent.map((country) => {
-      const button = renderCountryButton(country);
-      countriesButtonsContainer.appendChild(button);
-    });
-  }
-
-  function renderCountryButton({ name, id }) {
-    const flag = document.createElement("img");
-    const countryText = document.createElement("div.lead");
-    const countryBtn = document.createElement("div");
-
-    flag.setAttribute("src", `../images/${name}.png`);
-    flag.className = "rounded-flag m-1";
-
-    countryBtn.setAttribute("type", "button");
-    countryBtn.className = `${id} country-btn btn btn-secondary btn-lg lead px-0`;
-    countryBtn.style.width = "160px";
-    countryBtn.style.position = "relative";
-
-    countryText.className = "col-2";
-    countryText.textContent = name;
-
-    countryBtn.appendChild(flag);
-    countryBtn.appendChild(countryText);
-
-    return countryBtn;
-  }
 })();
 
 // Institutions Cards Rendering
@@ -157,45 +121,6 @@ function fetchNewsFrom(endpoint) {
         renderSelectedCountryCards(projectsByCountryId);
       });
   });
-
-  function renderSelectedCountryCards(country) {
-    const institutionsCardsContainer = document.querySelector(
-      ".institutions-cards-container"
-    );
-
-    // Borrando los botones renderizados anteriormente
-    removeAllChildNodes(institutionsCardsContainer);
-
-    country.map((project) => {
-      const card = renderProjectCard(project);
-      institutionsCardsContainer.innerHTML += card;
-    });
-  }
-
-  function renderProjectCard(project) {
-    const background =
-      project.background !== ""
-        ? `<img src="${project.background}" class="institution-card-img-top"></img>`
-        : `<div class="institution-card-img-top"></div>`;
-
-    return `<div class="card institution-card">
-              ${background} 
-              <div class="card-body institution-card-body">
-                <div class="row">
-                  <div class="col-2">
-                    <img src="${project.logo}" alt="${project.name}" class="logo"></img>
-                  </div>
-                  <div class="col-10">
-                    <a href="${project.website}" target="_blank">
-                      <h5 class="card-title ml-2">${project.name}</h5>
-                    </a>
-                  </div>
-                </div>
-                <div class="card-notch"></div>
-              </div>
-            </div>
-          </div>`;
-  }
 })();
 
 // Researchers
@@ -337,6 +262,54 @@ function fetchNewsFrom(endpoint) {
   }
 })();
 
+// Random rendering
+(function () {
+  const CONTINENTS = ["America", "Europe", "Asia", "Oceania", "Africa"];
+
+  const continentsBtns = document.querySelector(".continents-btns-container");
+  const countriesBtns = document.querySelector(".countries-btns-container");
+
+  const generateRandom = (minLimit, maxLimit) =>
+    Math.floor(Math.random() * (maxLimit - minLimit) + minLimit); // Random between min and max limit
+
+  renderRandomProjects(continentsBtns, countriesBtns);
+
+  function renderRandomProjects(continentsBtns, countriesBtns) {
+    const randIndexContinent = generateRandom(0, 5); // Random between 0 and the number of continents
+
+    fetch("https://geo-energy-api.herokuapp.com/continents")
+      .then((response) => response.json())
+      .then(({ continents }) => {
+        const randomContinent =
+          continents[randIndexContinent][CONTINENTS[randIndexContinent]];
+        const numberOfCountries = randomContinent.length;
+
+        // Setting the state of the button to active (basically painting it :D)
+        continentsBtns.children[randIndexContinent].style.backgroundColor =
+          "#DF8543";
+        renderSelectedContinentButtons(randomContinent);
+
+        const randIndexCountry = generateRandom(0, numberOfCountries);
+
+        fetch("https://geo-energy-api.herokuapp.com/institutions")
+          .then((response) => response.json())
+          .then(({ projects }) => {
+            const randomCountry = countriesBtns.children[randIndexCountry];
+
+            const countryId = randomCountry.classList[0];
+            // Filtramos los proyectos por país seleccionado
+            const projectsByCountryId = projects.filter(
+              (project) => project.countryId === countryId
+            );
+
+            // Color activo, cuando se hace click
+            randomCountry.style.backgroundColor = "#DF8543";
+            renderSelectedCountryCards(projectsByCountryId);
+          });
+      });
+  }
+})();
+
 /**
  * @description Removes all the childs from a given element
  * @param { HTMLObjectElement } parent
@@ -345,4 +318,79 @@ function removeAllChildNodes(parent) {
   while (parent.firstChild) {
     parent.removeChild(parent.firstChild);
   }
+}
+
+function renderSelectedContinentButtons(continent) {
+  const countriesButtonsContainer = document.querySelector(
+    ".countries-btns-container"
+  );
+
+  // Borrando los botones renderizados anteriormente
+  removeAllChildNodes(countriesButtonsContainer);
+
+  continent.map((country) => {
+    const button = renderCountryButton(country);
+    countriesButtonsContainer.appendChild(button);
+  });
+}
+
+function renderCountryButton({ name, id }) {
+  const flag = document.createElement("img");
+  const countryText = document.createElement("div.lead");
+  const countryBtn = document.createElement("div");
+
+  flag.setAttribute("src", `../images/${name}.png`);
+  flag.className = "rounded-flag m-1";
+
+  countryBtn.setAttribute("type", "button");
+  countryBtn.className = `${id} country-btn btn btn-secondary btn-lg lead px-0`;
+  countryBtn.style.width = "160px";
+  countryBtn.style.position = "relative";
+
+  countryText.className = "col-2";
+  countryText.textContent = name;
+
+  countryBtn.appendChild(flag);
+  countryBtn.appendChild(countryText);
+
+  return countryBtn;
+}
+
+function renderSelectedCountryCards(country) {
+  const institutionsCardsContainer = document.querySelector(
+    ".institutions-cards-container"
+  );
+
+  // Borrando los botones renderizados anteriormente
+  removeAllChildNodes(institutionsCardsContainer);
+
+  country.map((project) => {
+    const card = renderProjectCard(project);
+    institutionsCardsContainer.innerHTML += card;
+  });
+}
+
+function renderProjectCard(project) {
+  const background =
+    project.background !== ""
+      ? `<img src="${project.background}" class="institution-card-img-top"></img>`
+      : `<div class="institution-card-img-top"></div>`;
+
+  return `<div class="card institution-card">
+            ${background} 
+            <div class="card-body institution-card-body">
+              <div class="row">
+                <div class="col-2">
+                  <img src="${project.logo}" alt="${project.name}" class="logo"></img>
+                </div>
+                <div class="col-10">
+                  <a href="${project.website}" target="_blank">
+                    <h5 class="card-title ml-2">${project.name}</h5>
+                  </a>
+                </div>
+              </div>
+              <div class="card-notch"></div>
+            </div>
+          </div>
+        </div>`;
 }
