@@ -53,7 +53,7 @@
       "name": "Centro de Excelencia en Geotermia de los Andes",
       "contraction": "CEGA",
       "logo": "../images/cega.jpg",
-      "background": "",
+      "background": "../images/fondo CEGA Chile.jpg",
       "website": "http://www.cega-uchile.cl/"
     },
     {
@@ -125,7 +125,7 @@
       "name": "Instituto Nazionale di Geofisica e Vulcanologia",
       "contraction": "INGV",
       "logo": "../images/ingv.png",
-      "background": "../images/Slovenia GeoZS2.jpg",
+      "background": "../images/INGV italia Napoli.jpg",
       "website": "http://www.ov.ingv.it/ov/"
     },
     {
@@ -141,7 +141,7 @@
       "name": "Geoloski Zavod Slovenije",
       "contraction": "GeoZS",
       "logo": "../images/GeoZS.jpg",
-      "background": "",
+      "background": "../images/Slovenia GeoZS2.jpg",
       "website": "https://www.geo-zs.si/index.php/en/geozs-en/role-and-purpose-of-the-geozs"
     },
     {
@@ -154,7 +154,7 @@
     },
     {
       "countryId": "13",
-      "name": "Vetenskap Och Konst",
+      "name": "Royal Institute of Technology",
       "contraction": "KTH",
       "logo": "../images/kth.png",
       "background": "",
@@ -186,19 +186,19 @@
     },
     {
       "countryId": "17",
-      "name": "The University of Auckland",
-      "contraction": "UA",
-      "logo": "../images/University of Auckland.png",
-      "background": "",
-      "website": "https://www.auckland.ac.nz/en/science/about-the-faculty/school-of-environment.html"
-    },
-    {
-      "countryId": "18",
       "name": "URGE energy",
       "contraction": "URGE",
       "logo": "../images/URGE Energy.jpg",
       "background": "",
       "website": ""
+    },
+    {
+      "countryId": "18",
+      "name": "The University of Auckland",
+      "contraction": "UA",
+      "logo": "../images/University of Auckland.png",
+      "background": "",
+      "website": "https://www.auckland.ac.nz/en/science/about-the-faculty/school-of-environment.html"
     },
     {
       "countryId": "19",
