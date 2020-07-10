@@ -83,6 +83,18 @@ module.exports = {
         useShortDoctype: true,
       },
     }),
+    new HtmlWebpackPlugin({
+      filename: "html/aimsAndBackground.html",
+      template: "./src/aimsAndBackground.html",
+      minify: {
+        collapseWhitespace: true,
+        removeComments: true,
+        removeRedundantAttributes: true,
+        removeScriptTypeAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        useShortDoctype: true,
+      },
+    }),
     new MiniCssExtractPlugin({
       filename: "css/app.bundle.css",
     }),

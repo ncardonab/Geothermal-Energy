@@ -587,3 +587,12 @@ a:hover {
   height: 77.62px;
 }
 
+/* Aims & Background */
+.aims-and-background-jumbotron {
+  height: 100vh;
+  background-image: url(../images/EbpadfnWAAAof5e.55dfbc.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
