@@ -588,11 +588,24 @@ a:hover {
 }
 
 /* Aims & Background */
+
+/* header */
 .aims-and-background-jumbotron {
   height: 100vh;
   background-image: url(../images/EbpadfnWAAAof5e.55dfbc.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+/* section 1 */
+.aims-and-background-section-1-container {
+  height: 72.64%;
+}
+
+.mountain-icon {
+  height: 123;
+  width: 123;
+  fill: #777778;
 }
 
