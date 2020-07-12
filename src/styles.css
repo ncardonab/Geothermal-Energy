@@ -623,3 +623,9 @@ a:hover {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/* section 4 */
+.aims-and-background-section-4-container {
+  height: 85.71%;
+  background-color: #ffffff;
+}
