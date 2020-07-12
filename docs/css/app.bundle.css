@@ -615,3 +615,12 @@ a:hover {
   background-color: #f4f4f7;
 }
 
+/* section 3 */
+.aims-and-background-section-3-container {
+  height: 85.71%;
+  background-image: url("../images/Section 3 Background.89e7cc.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
