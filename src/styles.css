@@ -606,7 +606,6 @@ a:hover {
 .mountain-icon {
   height: 123;
   width: 123;
-  fill: #777778;
 }
 
 /* section 2 */
@@ -618,7 +617,7 @@ a:hover {
 /* section 3 */
 .aims-and-background-section-3-container {
   height: 85.71%;
-  background-image: url("../public/img/Section 3 Background.jpg");
+  background-image: url("../public/img/Section_3_Background.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
