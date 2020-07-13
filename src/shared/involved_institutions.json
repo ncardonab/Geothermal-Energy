@@ -34,14 +34,6 @@
     },
     {
       "countryId": "2",
-      "name": "National Scientific and Technical Research Council",
-      "contraction": "CONICET",
-      "logo": "../images/conicet.png",
-      "background": "",
-      "website": "https://ihlla.conicet.gov.ar/"
-    },
-    {
-      "countryId": "2",
       "name": "Instituto de Hidrologia de Llanuras",
       "contraction": "IHLLA",
       "logo": "../images/ihlla.png",

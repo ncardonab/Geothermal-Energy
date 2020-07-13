@@ -18,6 +18,7 @@ function renderNews() {
     const image = document.createElement("img");
 
     image.setAttribute("src", thumbnail);
+    image.setAttribute("class", "img-fluid");
     imgTagContainer.appendChild(image);
     aTag.setAttribute("href", url);
     aTag.textContent = caption;
@@ -33,6 +34,7 @@ function renderNews() {
         const image = document.createElement("img");
 
         image.setAttribute("src", thumbnail);
+        image.setAttribute("class", "img-fluid");
         imgTagContainer.appendChild(image);
         aTag.setAttribute("href", url);
         aTag.textContent = caption;
