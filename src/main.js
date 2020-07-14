@@ -125,7 +125,7 @@ function fetchNewsFrom(endpoint) {
   });
 })();
 
-// Self Invoking Function (SIF) que renderiza los investigadores
+// Self Invoking Function (SIF) that renders the researchers
 (async function (doc) {
   const paginationContainer = doc.querySelector(".pagination-status");
   const pagStatus = +paginationContainer.getAttribute("data-status"); // el + es para volverlo un número
@@ -251,53 +251,63 @@ function fetchNewsFrom(endpoint) {
   }
 })(document);
 
-// Random rendering
-(function () {
+// Self Invoking Function (SIF) that that selects randomly a continent and from it a country and renders it's projects/institutions
+(function (doc) {
   const CONTINENTS = ["America", "Europe", "Asia", "Oceania", "Africa"];
 
-  const continentsBtns = document.querySelector(".continents-btns-container");
-  const countriesBtns = document.querySelector(".countries-btns-container");
+  const continentsBtns = doc.querySelector(".continents-btns-container");
+  const countriesBtns = doc.querySelector(".countries-btns-container");
 
-  const generateRandom = (minLimit, maxLimit) =>
+  const generateRandomBetween = (minLimit, maxLimit) =>
     Math.floor(Math.random() * (maxLimit - minLimit) + minLimit); // Random between min and max limit
 
   renderRandomProjects(continentsBtns, countriesBtns);
 
-  function renderRandomProjects(continentsBtns, countriesBtns) {
-    const randIndexContinent = generateRandom(0, 5); // Random between 0 and the number of continents
+  async function renderRandomProjects(continentsBtns, countriesBtns) {
+    const randIndexContinent = generateRandomBetween(0, 5); // Random between 0 and the number of continents
 
-    fetch("https://geo-energy-api.herokuapp.com/continents")
-      .then((response) => response.json())
-      .then(({ continents }) => {
-        const randomContinent =
-          continents[randIndexContinent][CONTINENTS[randIndexContinent]];
-        const numberOfCountries = randomContinent.length;
+    try {
+      // Fetching the continents
+      const continentsResponse = await fetch(
+        "https://geo-energy-api.herokuapp.com/continents"
+      );
+      let { continents } = await continentsResponse.json();
 
-        // Setting the state of the button to active (basically painting it :D)
-        continentsBtns.children[randIndexContinent].style.backgroundColor =
-          "#DF8543";
-        renderSelectedContinentButtons(randomContinent);
+      // Selecting a randomly a continent
+      const randomContinent =
+        continents[randIndexContinent][CONTINENTS[randIndexContinent]];
+      const numberOfCountries = randomContinent.length;
 
-        const randIndexCountry = generateRandom(0, numberOfCountries);
+      // Setting the state of the button to active (basically painting it :D)
+      continentsBtns.children[randIndexContinent].style.backgroundColor =
+        "#DF8543";
+      renderSelectedContinentButtons(randomContinent);
 
-        fetch("https://geo-energy-api.herokuapp.com/institutions")
-          .then((response) => response.json())
-          .then(({ projects }) => {
-            const randomCountry = countriesBtns.children[randIndexCountry];
+      const randIndexCountry = generateRandomBetween(0, numberOfCountries);
 
-            const countryId = randomCountry.classList[0];
-            // Filtramos los proyectos por país seleccionado
-            const projectsByCountryId = projects.filter(
-              (project) => project.countryId === countryId
-            );
+      // Fetching the institutions
+      const institutionsResponse = await fetch(
+        "https://geo-energy-api.herokuapp.com/institutions"
+      );
+      let { projects } = await institutionsResponse.json();
 
-            // Color activo, cuando se hace click
-            randomCountry.style.backgroundColor = "#DF8543";
-            renderSelectedCountryCards(projectsByCountryId);
-          });
-      });
+      const randomCountryBtn = countriesBtns.children[randIndexCountry];
+
+      const countryId = randomCountryBtn.classList[0];
+      // Filtering the projects by country id
+      const projectsByCountryId = projects.filter(
+        (project) => project.countryId === countryId
+      );
+
+      // Setting the state of the buttom to active
+      randomCountryBtn.style.backgroundColor = "#DF8543";
+      renderSelectedCountryCards(projectsByCountryId);
+    } catch (err) {
+      const error = new Error(err);
+      console.log(error);
+    }
   }
-})();
+})(document);
 
 /**
  * @description Removes all the childs from a given element
