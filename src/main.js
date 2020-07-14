@@ -125,82 +125,69 @@ function fetchNewsFrom(endpoint) {
   });
 })();
 
-// Researchers
-(function () {
-  const paginationContainer = document.querySelector(".pagination-status");
+// Self Invoking Function (SIF) que renderiza los investigadores
+(async function (doc) {
+  const paginationContainer = doc.querySelector(".pagination-status");
   const pagStatus = +paginationContainer.getAttribute("data-status"); // el + es para volverlo un número
 
-  // First rendering
-  fetch("https://geo-energy-api.herokuapp.com/researchers")
-    .then((response) => response.json())
-    .then(({ researchers }) => {
-      researchers = researchers.filter(
-        (researcher) => !researcher.isLeader && !researcher.isSecretary
-      );
-      renderResearchersProfiles(researchers, pagStatus);
-      renderPaginationStatus(pagStatus, researchers.length);
-    })
-    .catch((err) => console.log(err));
-
   // Pagination buttons
-  const next = document.querySelector(".next-icon");
-  const previous = document.querySelector(".previous-icon");
+  const next = doc.querySelector(".next-icon");
+  const previous = doc.querySelector(".previous-icon");
 
-  // Next button
-  next.addEventListener("click", (event) => {
-    fetch("https://geo-energy-api.herokuapp.com/researchers")
-      .then((response) => response.json())
-      .then(({ researchers }) => {
-        const previousState = +paginationContainer.getAttribute("data-status");
-        const numberOfPages =
-          +paginationContainer.textContent.split("/")[1] - 1;
+  try {
+    // Trayendo los investigadores
+    const RESPONSE = await fetch(
+      "https://geo-energy-api.herokuapp.com/researchers"
+    );
+    let { researchers } = await RESPONSE.json();
 
-        if (previousState < numberOfPages * 4) {
-          paginationContainer.setAttribute(
-            "data-status",
-            (previousState + 4).toString()
-          );
+    // Filtrando aquellos investigadores que no sean ni lideres ni secretarios
+    let normalResearchers = researchers.filter(
+      (researcher) => !researcher.isLeader && !researcher.isSecretary
+    );
 
-          const counter = +paginationContainer.getAttribute("data-status");
+    // First rendering
+    renderResearchersProfiles(normalResearchers, pagStatus);
+    renderPaginationStatus(pagStatus, normalResearchers.length);
 
-          // Filtrando aquelllos investigadores que no sean ni lideres ni secretarios
-          researchers = researchers.filter(
-            (researcher) => !researcher.isLeader && !researcher.isSecretary
-          );
+    // Next button click event
+    next.addEventListener("click", (event) => {
+      const previousState = +paginationContainer.getAttribute("data-status");
+      const numberOfPages = +paginationContainer.textContent.split("/")[1] - 1;
 
-          renderResearchersProfiles(researchers, counter);
-          renderPaginationStatus(counter, researchers.length);
-        }
-      })
-      .catch((err) => console.log(err));
-  });
+      if (previousState < numberOfPages * 4) {
+        paginationContainer.setAttribute(
+          "data-status",
+          (previousState + 4).toString()
+        );
 
-  // Previous button
-  previous.addEventListener("click", (event) => {
-    fetch("https://geo-energy-api.herokuapp.com/researchers")
-      .then((response) => response.json())
-      .then(({ researchers }) => {
-        const previousState = +paginationContainer.getAttribute("data-status");
+        const counter = +paginationContainer.getAttribute("data-status");
 
-        if (previousState > 0) {
-          paginationContainer.setAttribute(
-            "data-status",
-            (previousState - 4).toString()
-          );
+        renderResearchersProfiles(normalResearchers, counter);
+        renderPaginationStatus(counter, normalResearchers.length);
+      }
+    });
 
-          const counter = +paginationContainer.getAttribute("data-status");
+    // Previous button click event
+    previous.addEventListener("click", (event) => {
+      const previousState = +paginationContainer.getAttribute("data-status");
 
-          // Filtrando aquelllos investigadores que no sean ni lideres ni secretarios
-          researchers = researchers.filter(
-            (researcher) => !researcher.isLeader && !researcher.isSecretary
-          );
+      if (previousState > 0) {
+        paginationContainer.setAttribute(
+          "data-status",
+          (previousState - 4).toString()
+        );
 
-          renderResearchersProfiles(researchers, counter);
-          renderPaginationStatus(counter, researchers.length);
-        }
-      })
-      .catch((err) => console.log(err));
-  });
+        const counter = +paginationContainer.getAttribute("data-status");
+
+        renderResearchersProfiles(normalResearchers, counter);
+        renderPaginationStatus(counter, normalResearchers.length);
+      }
+    });
+  } catch (err) {
+    const error = new Error(err);
+    console.log(error);
+  }
 
   /**
    * @description Update the paginations status
@@ -208,7 +195,7 @@ function fetchNewsFrom(endpoint) {
    * @param {Number} researchersQuantity
    */
   function renderPaginationStatus(currentStatus, researchersQuantity) {
-    const paginationStatus = document.querySelector(".pagination-status");
+    const paginationStatus = doc.querySelector(".pagination-status");
 
     const currentPage = currentStatus / 4 + 1;
 
@@ -226,7 +213,7 @@ function fetchNewsFrom(endpoint) {
    */
   function renderResearchersProfiles(researchers, counter) {
     // Cards container
-    const researchersCardsContainer = document.querySelector(
+    const researchersCardsContainer = doc.querySelector(
       ".researchers-cards-container"
     );
 
@@ -262,7 +249,7 @@ function fetchNewsFrom(endpoint) {
               </a>
             </div>`;
   }
-})();
+})(document);
 
 // Random rendering
 (function () {
