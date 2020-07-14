@@ -54,51 +54,57 @@ function fetchNewsFrom(endpoint) {
 }
 
 // Secretary Section
-// Countries Buttons Rendering
-(function () {
-  const continentsBtns = document.querySelector(".continents-btns-container");
+// Self Invoking Function (SIF) Countries Buttons Rendering
+(function (doc) {
+  const continentsBtns = doc.querySelector(".continents-btns-container");
 
-  // Añadiendo un propagador de eventos
-  continentsBtns.addEventListener("click", (event) => {
+  // Adding an event propagator
+  continentsBtns.addEventListener("click", async (event) => {
     Array.from(continentsBtns.children).forEach((continent) => {
       continent.style.backgroundColor = "#585858";
     });
 
-    // Traemos todos los continentes y filtramos por continente presionado
-    fetch("https://geo-energy-api.herokuapp.com/continents")
-      .then((response) => response.json())
-      .then(({ continents }) => {
-        if (event.target.className.includes("america")) {
-          event.target.style.backgroundColor = "rgba(223, 133, 67, 1)";
-          renderSelectedContinentButtons(continents[0].America);
-        } else if (event.target.className.includes("europe")) {
-          event.target.style.backgroundColor = "rgba(223, 133, 67, 1)";
-          renderSelectedContinentButtons(continents[1].Europe);
-        } else if (event.target.className.includes("asia")) {
-          event.target.style.backgroundColor = "rgba(223, 133, 67, 1)";
-          renderSelectedContinentButtons(continents[2].Asia);
-        } else if (event.target.className.includes("oceania")) {
-          event.target.style.backgroundColor = "rgba(223, 133, 67, 1)";
-          renderSelectedContinentButtons(continents[3].Oceania);
-        } else if (event.target.className.includes("africa")) {
-          event.target.style.backgroundColor = "rgba(223, 133, 67, 1)";
-          renderSelectedContinentButtons(continents[4].Africa);
-        }
-      });
+    try {
+      // Fetching all of the continents and filter by pressed continent button
+      const response = await fetch(
+        "https://geo-energy-api.herokuapp.com/continents"
+      );
+      const continents = response.json();
+
+      if (event.target.className.includes("america")) {
+        event.target.style.backgroundColor = "rgba(223, 133, 67, 1)";
+        renderSelectedContinentButtons(continents[0].America);
+      } else if (event.target.className.includes("europe")) {
+        event.target.style.backgroundColor = "rgba(223, 133, 67, 1)";
+        renderSelectedContinentButtons(continents[1].Europe);
+      } else if (event.target.className.includes("asia")) {
+        event.target.style.backgroundColor = "rgba(223, 133, 67, 1)";
+        renderSelectedContinentButtons(continents[2].Asia);
+      } else if (event.target.className.includes("oceania")) {
+        event.target.style.backgroundColor = "rgba(223, 133, 67, 1)";
+        renderSelectedContinentButtons(continents[3].Oceania);
+      } else if (event.target.className.includes("africa")) {
+        event.target.style.backgroundColor = "rgba(223, 133, 67, 1)";
+        renderSelectedContinentButtons(continents[4].Africa);
+      }
+    } catch (err) {
+      const error = new Error(err);
+      console.log(error);
+    }
   });
-})();
+})(document);
 
-// Institutions Cards Rendering
-(function () {
-  const countriesBtns = document.querySelector(".countries-btns-container");
+// Self Invoking Function (SIF) Institutions Cards Rendering
+(function (doc) {
+  const countriesBtns = doc.querySelector(".countries-btns-container");
 
-  countriesBtns.addEventListener("click", (event) => {
+  countriesBtns.addEventListener("click", async (event) => {
     // Cambia el color al estandar cada vez que halla un nuevo click
     Array.from(countriesBtns.children).forEach((country) => {
       country.style.backgroundColor = "#585858";
     });
 
-    // Obtiene el button y nos los elementos hijos del mismo
+    // Gets the buttons and not the child elements
     let clickedButton = null;
     if (event.target.className.includes("country-btn")) {
       clickedButton = event.target;
@@ -108,22 +114,29 @@ function fetchNewsFrom(endpoint) {
       clickedButton = event.target.parentElement;
     }
 
-    // Cada botón tiene su propio id del país
+    // Each button has the country id
     let countryId = clickedButton.classList[0];
 
-    fetch("https://geo-energy-api.herokuapp.com/institutions")
-      .then((res) => res.json())
-      .then(({ projects }) => {
-        // Filtramos los proyectos por país seleccionado
-        const projectsByCountryId = projects.filter(
-          (project) => project.countryId === countryId
-        );
-        // Color activo, cuando se hace click
-        clickedButton.style.backgroundColor = "#DF8543";
-        renderSelectedCountryCards(projectsByCountryId);
-      });
+    try {
+      // Fetching the institutions
+      const institutionsResponse = await fetch(
+        "https://geo-energy-api.herokuapp.com/institutions"
+      );
+      let { projects } = await institutionsResponse.json();
+      // Filtering the projects by the selected country
+      const projectsByCountryId = projects.filter(
+        (project) => project.countryId === countryId
+      );
+
+      // Setting the state to active
+      clickedButton.style.backgroundColor = "#DF8543";
+      renderSelectedCountryCards(projectsByCountryId);
+    } catch (err) {
+      const error = new Error(err);
+      console.log(error);
+    }
   });
-})();
+})(document);
 
 // Self Invoking Function (SIF) that renders the researchers
 (async function (doc) {
@@ -268,10 +281,10 @@ function fetchNewsFrom(endpoint) {
 
     try {
       // Fetching the continents
-      const continentsResponse = await fetch(
+      const response = await fetch(
         "https://geo-energy-api.herokuapp.com/continents"
       );
-      let { continents } = await continentsResponse.json();
+      let { continents } = await response.json();
 
       // Selecting a randomly a continent
       const randomContinent =
