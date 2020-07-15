@@ -37,7 +37,7 @@
       "name": "Instituto de Hidrologia de Llanuras",
       "contraction": "IHLLA",
       "logo": "../images/ihlla.png",
-      "background": "",
+      "background": "../images/",
       "website": "https://ihlla.conicet.gov.ar/"
     },
     {
@@ -53,7 +53,7 @@
       "name": "Ministerio de Medio Ambiente, Gobierno de el Salvador",
       "contraction": "MARN",
       "logo": "../images/Ministerio de Medio Ambiente.png",
-      "background": "",
+      "background": "../images/Ministerio El Salvador.jpg",
       "website": "https://www.marn.gob.sv/"
     },
     {
@@ -61,7 +61,7 @@
       "name": "Instituto Nacional de Electricidad y Energías Limpias",
       "contraction": "INEEL",
       "logo": "../images/ineel.png",
-      "background": "",
+      "background": "../images/INEEL mexico.jpeg",
       "website": "https://www.gob.mx/ineel"
     },
     {
@@ -101,7 +101,7 @@
       "name": "Géosciences pour une Terre durable",
       "contraction": "BRGM",
       "logo": "../images/brgm.png",
-      "background": "",
+      "background": "../images/BRGM background.png",
       "website": "https://www.brgm.fr/"
     },
     {
@@ -109,7 +109,7 @@
       "name": "Universitá Degli Studi de Padova",
       "contraction": "UDSP",
       "logo": "../images/padova.png",
-      "background": "",
+      "background": "../images/Padova Italy.jpg",
       "website": "https://www.unipd.it/"
     },
     {
@@ -125,7 +125,7 @@
       "name": "University of Mons",
       "contraction": "Mons",
       "logo": "../images/umons.png",
-      "background": "",
+      "background": "../images/UMons.jpg",
       "website": "https://web.umons.ac.be/fr/"
     },
     {
@@ -149,7 +149,7 @@
       "name": "Royal Institute of Technology",
       "contraction": "KTH",
       "logo": "../images/kth.png",
-      "background": "",
+      "background": "../images/KTH Suecia.png",
       "website": "https://www.kth.se/en"
     },
     {
@@ -157,7 +157,7 @@
       "name": "Institut Cartográphic i Geológic de Catalunya",
       "contraction": "ICGC",
       "logo": "../images/icgc.png",
-      "background": "",
+      "background": "../images/ICGC Cataluña España.jpg",
       "website": "https://www.icgc.cat/"
     },
     {
@@ -165,7 +165,7 @@
       "name": "Akita University",
       "contraction": "Akita",
       "logo": "../images/akita.jpg",
-      "background": "",
+      "background": "../images/akita Japon.jpeg",
       "website": "https://www.akita-u.ac.jp/eng/"
     },
     {
@@ -173,7 +173,7 @@
       "name": "Institute of Rock and Soil Mechanics, Chinese Academy of Sciences",
       "contraction": "IRSM",
       "logo": "../images/irsm.svg",
-      "background": "",
+      "background": "../images/",
       "website": "http://english.whrsm.cas.cn/"
     },
     {
@@ -181,15 +181,15 @@
       "name": "URGE energy",
       "contraction": "URGE",
       "logo": "../images/URGE Energy.jpg",
-      "background": "",
-      "website": ""
+      "background": "../images/Urge Image.png",
+      "website": "https://www.urgeenergy.com.au/"
     },
     {
       "countryId": "18",
       "name": "The University of Auckland",
       "contraction": "UA",
       "logo": "../images/University of Auckland.png",
-      "background": "",
+      "background": "../images/University of Auckland Background.jpg",
       "website": "https://www.auckland.ac.nz/en/science/about-the-faculty/school-of-environment.html"
     },
     {
@@ -197,7 +197,7 @@
       "name": "École Nationale Polytechnique de Constantine",
       "contraction": "ENPC",
       "logo": "../images/enpc.png",
-      "background": "",
+      "background": "../images/Argelia Ecole National Polytecnique Constantine.jpg",
       "website": "http://www.enp-constantine.dz/"
     },
     {
