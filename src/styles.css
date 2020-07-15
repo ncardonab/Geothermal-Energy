@@ -76,6 +76,14 @@ h4 {
 }
 
 /* News Section */
+
+.news-cards-title {
+  background-color: var(--primary-color-bg);
+  border-radius: 10px;
+  width: 330px;
+  height: 32px;
+}
+
 .cards-container {
   width: 90%;
   position: absolute;
