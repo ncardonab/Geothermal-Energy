@@ -2,45 +2,39 @@ import "./styles.css";
 
 document.addEventListener("DOMContentLoaded", renderNews);
 
-function renderNews() {
+async function renderNews() {
+  // Fetching the news from both english and spanish websites of thinkgeoenergy.com
+  const newsESP = await fetchNewsFrom("newsESP");
+  const newsENG = await fetchNewsFrom("newsENG");
+
+  // Rendering both fetched new into the DOM
+  embedNews(newsESP[0], 2);
+
+  newsENG.map((news, index) => {
+    if (index < 2) {
+      embedNews(news, index);
+    }
+  });
+}
+
+function embedNews(news, cardIndex) {
   const newsCards = [
     document.querySelector(".news-card-1"),
     document.querySelector(".news-card-2"),
     document.querySelector(".news-card-3"),
   ];
 
-  fetchNewsFrom("newsESP").then((newsArray) => {
-    const news = newsArray[0];
-    const { url, thumbnail, caption } = news;
+  const { url, thumbnail, caption } = news;
 
-    const aTag = newsCards[2].children[1];
-    const imgTagContainer = newsCards[2].children[0];
-    const image = document.createElement("img");
+  const aTag = newsCards[cardIndex].children[1];
+  const imgTagContainer = newsCards[cardIndex].children[0];
+  const image = document.createElement("img");
 
-    image.setAttribute("src", thumbnail);
-    image.setAttribute("class", "img-fluid");
-    imgTagContainer.appendChild(image);
-    aTag.setAttribute("href", url);
-    aTag.textContent = caption;
-  });
-
-  fetchNewsFrom("newsENG").then((newsArray) => {
-    newsArray.map((news, index) => {
-      if (index < 2) {
-        const { url, thumbnail, caption } = news;
-
-        const aTag = newsCards[index].children[1];
-        const imgTagContainer = newsCards[index].children[0];
-        const image = document.createElement("img");
-
-        image.setAttribute("src", thumbnail);
-        image.setAttribute("class", "img-fluid");
-        imgTagContainer.appendChild(image);
-        aTag.setAttribute("href", url);
-        aTag.textContent = caption;
-      }
-    });
-  });
+  image.setAttribute("src", thumbnail);
+  image.setAttribute("class", "img-fluid");
+  imgTagContainer.appendChild(image);
+  aTag.setAttribute("href", url);
+  aTag.textContent = caption;
 }
 
 function fetchNewsFrom(endpoint) {
