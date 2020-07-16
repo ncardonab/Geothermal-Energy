@@ -241,7 +241,19 @@ function fetchNewsFrom(endpoint) {
    * @param {Object} researcher
    */
   function renderResearcherProfile(researcher) {
+    const capitalize = ([firstletter, ...rest]) => {
+      return firstletter.toUpperCase() + rest.join("");
+    };
     const profilePhoto = `../images/${researcher.name} ${researcher.lastname} ${researcher.currentMembershipCountry}.png`;
+    const pillsContainer = doc.createElement("div");
+
+    researcher.keywords
+      ? researcher.keywords.split(", ").map((keyword) => {
+          pillsContainer.innerHTML += `<span class="badge badge-pill badge-info m-1 my-1">${capitalize(
+            keyword
+          )}</span>`;
+        })
+      : null;
 
     return `<div class="researcher-card col-3">
               <img
@@ -251,6 +263,8 @@ function fetchNewsFrom(endpoint) {
               />
               <h4 class="researcher-fullname my-3">${researcher.name} ${researcher.lastname}</h4>
               <p class="lead">${researcher.currentInstitution}</p>
+              <div style="border-bottom: 1px solid gray; width: 85%;"></div>
+              ${pillsContainer.outerHTML}
               <div style="border-bottom: 1px solid gray; width: 85%;"></div>
               <a href="${researcher.linkedIn}" target="_blank">
                 <i class="fab fa-linkedin fa-2x my-2"></i>
