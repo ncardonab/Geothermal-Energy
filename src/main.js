@@ -249,7 +249,7 @@ function fetchNewsFrom(endpoint) {
 
     researcher.keywords
       ? researcher.keywords.split(", ").map((keyword) => {
-          pillsContainer.innerHTML += `<span class="badge badge-pill badge-info m-1 my-1">${capitalize(
+          pillsContainer.innerHTML += `<span class="badge badge-pill badge-info mr-1 my-1">${capitalize(
             keyword
           )}</span>`;
         })
