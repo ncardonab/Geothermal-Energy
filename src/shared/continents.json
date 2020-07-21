@@ -1,0 +1,96 @@
+{
+  "continents": [
+    {
+      "America": [
+        {
+          "id": "1",
+          "name": "Colombia"
+        },
+        {
+          "id": "2",
+          "name": "Argentina"
+        },
+        {
+          "id": "3",
+          "name": "Chile"
+        },
+        {
+          "id": "4",
+          "name": "Salvador"
+        },
+        {
+          "id": "5",
+          "name": "Mexico"
+        },
+        {
+          "id": "6",
+          "name": "Canada"
+        }
+      ]
+    },
+    {
+      "Europe": [
+        {
+          "id": "8",
+          "name": "France"
+        },
+        {
+          "id": "9",
+          "name": "Italy"
+        },
+        {
+          "id": "10",
+          "name": "Belgium"
+        },
+        {
+          "id": "11",
+          "name": "Slovenia"
+        },
+        {
+          "id": "12",
+          "name": "Iceland"
+        },
+        {
+          "id": "13",
+          "name": "Sweden"
+        },
+        {
+          "id": "14",
+          "name": "Spain"
+        }
+      ]
+    },
+    {
+      "Asia": [
+        {
+          "id": "15",
+          "name": "Japan"
+        },
+        {
+          "id": "16",
+          "name": "China"
+        }
+      ]
+    },
+    {
+      "Oceania": [
+        {
+          "id": "17",
+          "name": "Australia"
+        },
+        {
+          "id": "18",
+          "name": "New Zealand"
+        }
+      ]
+    },
+    {
+      "Africa": [
+        {
+          "id": "19",
+          "name": "Argelia"
+        }
+      ]
+    }
+  ]
+}
