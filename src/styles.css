@@ -8,6 +8,22 @@
   --dark-color: rgba(0, 0, 0, 1);
 }
 
+/* Slideshow */
+
+.carousel-item{
+  width: 100%;
+  height: 500px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@media (max-width: 600px) {
+  .carousel-item {
+    height: 280px;
+  }
+}
 /* Header */
 .navbar-head {
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
