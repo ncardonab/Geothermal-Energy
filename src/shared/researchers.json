@@ -151,16 +151,6 @@
       "keywords": "Ground Source Heat Pumps, Distributed Temperature Sensing, Borehole Heat Exchangers"
     },
     {
-      "name": "Salima",
-      "lastname": "Ouali",
-      "currentMembershipCountry": "Argelia",
-      "isLeader": false,
-      "isSecretary": false,
-      "linkedIn": "https://www.cder.dz/",
-      "currentInstitution": "Centre de développement des énergies renouvelables",
-      "keywords": "Geophysics for geothermal exploration, hydrogeology, geochemistry of Algerian thermal waters"
-    },
-    {
       "name": "Oscar",
       "lastname": "Llamosa",
       "currentMembershipCountry": "Australia",
@@ -169,6 +159,26 @@
       "linkedIn": "https://www.linkedin.com/in/oscarllamosa/",
       "currentInstitution": "URGE ENERGY PTY LTD",
       "keywords": "New Energies, Subsurface Technologies, Outreach & Communication"
+    },
+    {
+      "name": "Hejuan",
+      "lastname": "Liu",
+      "currentMembershipCountry": "China",
+      "isLeader": false,
+      "isSecretary": false,
+      "linkedIn": "http://english.whrsm.cas.cn/",
+      "currentInstitution": "Institute of Rock and Soil Mechanics, Chinese Academy of Sciences",
+      "keywords": "numerical simulation, hydraulic fracturing, acid treatment, HDR"
+    },
+    {
+      "name": "Salima",
+      "lastname": "Ouali",
+      "currentMembershipCountry": "Argelia",
+      "isLeader": false,
+      "isSecretary": false,
+      "linkedIn": "https://www.linkedin.com/in/salima-ouali-b46a8780/",
+      "currentInstitution": "Centre de développement des énergies renouvelables",
+      "keywords": "Geophysics for geothermal exploration, hydrogeology, geochemistry of Algerian thermal waters"
     },
     {
       "name": "Pietro",
