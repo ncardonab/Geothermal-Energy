@@ -26,15 +26,30 @@ function embedNews(news, cardIndex) {
 
   const { url, thumbnail, caption } = news;
 
-  const aTag = newsCards[cardIndex].children[1];
-  const imgTagContainer = newsCards[cardIndex].children[0];
-  const image = document.createElement("img");
+  const aTag = `<a
+                  class="col-sm-5 text-decoration-none light-text font-weight-lighter"
+                  href="${url}"
+                  target="_blank"
+                >
+                  ${caption}
+                </a>`;
 
-  image.setAttribute("src", thumbnail);
-  image.setAttribute("class", "img-fluid");
-  imgTagContainer.appendChild(image);
-  aTag.setAttribute("href", url);
-  aTag.textContent = caption;
+  const imgTagContainer = `<div class="col-sm-6 new-img">
+                            <img src="${thumbnail}" class="img-fluid">
+                          </div>`;
+
+  newsCards[cardIndex].innerHTML = imgTagContainer;
+  newsCards[cardIndex].innerHTML += aTag;
+
+  // const aTag = newsCards[cardIndex].children[1];
+  // const imgTagContainer = newsCards[cardIndex].children[0];
+  // const image = document.createElement("img");
+
+  // image.setAttribute("src", thumbnail);
+  // image.setAttribute("class", "img-fluid");
+  // imgTagContainer.appendChild(image);
+  // aTag.setAttribute("href", url);
+  // aTag.textContent = caption;
 }
 
 function fetchNewsFrom(endpoint) {

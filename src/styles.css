@@ -99,17 +99,20 @@ h4 {
   border-top-left-radius: 8px;
   background-color: rgba(255, 255, 255, 0.308);
   transition: ease all 0.3s;
+  height: 178px;
 }
 
 .news-card-2 {
   background-color: rgba(255, 255, 255, 0.308);
   transition: ease all 0.3s;
+  height: 178px;
 }
 
 .news-card-3 {
   border-top-right-radius: 8px;
   background-color: rgba(255, 255, 255, 0.308);
   transition: ease all 0.3s;
+  height: 178px;
 }
 
 .news-card-1:hover .light-text {
