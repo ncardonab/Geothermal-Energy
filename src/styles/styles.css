@@ -29,7 +29,7 @@
 
 .jumbotron {
   height: 100vh;
-  background-image: url("../public/img/Cascada.png");
+  background-image: url("../../public/img/Cascada.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -204,7 +204,7 @@ h4 {
 /* Section 2 | Background */
 .section-2 {
   height: 400px;
-  background-image: url(../public/img/background-fog.png);
+  background-image: url(../../public/img/background-fog.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -294,7 +294,7 @@ h4 {
 }
 
 .view-more-icon {
-  background: url(..\\public\\img\\view_more.svg);
+  background: url("../../public/img/view_more.svg");
   height: 20px;
   width: 20px;
   display: inline-block;
@@ -348,7 +348,7 @@ h4 {
 
 .secretary {
   height: 75vh;
-  background-image: url("../public/img/Vesuvio.jpg");
+  background-image: url("../../public/img/Vesuvio.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -532,7 +532,7 @@ a:hover {
 }
 
 .previous-icon {
-  background: url("../public/img/Exclusion 1.svg");
+  background: url("../../public/img/Exclusion 1.svg");
   background-repeat: no-repeat;
   background-position: center;
   height: 25px;
@@ -549,7 +549,7 @@ a:hover {
 }
 
 .next-icon {
-  background: url("../public/img/Exclusion 2.svg");
+  background: url("../../public/img/Exclusion 2.svg");
   background-repeat: no-repeat;
   background-position: center;
   height: 25px;
@@ -570,7 +570,7 @@ a:hover {
 /* Header | Section 1 */
 .geothermal-energy-jumbotron {
   height: 100vh;
-  background-image: url("../public/img/brown-soil-1437337.jpg");
+  background-image: url("../../public/img/brown-soil-1437337.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -608,7 +608,7 @@ a:hover {
 /* header */
 .aims-and-background-jumbotron {
   height: 100vh;
-  background-image: url("../public/img/EbpadfnWAAAof5e.jpg");
+  background-image: url("../../public/img/EbpadfnWAAAof5e.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -633,7 +633,7 @@ a:hover {
 /* section 3 */
 .aims-and-background-section-3-container {
   height: 85.71%;
-  background-image: url("../public/img/Section_3_Background.jpg");
+  background-image: url("../../public/img/Section_3_Background.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

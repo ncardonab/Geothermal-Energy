@@ -4,7 +4,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   entry: {
-    app: ["@babel/polyfill", "./src/main.js"],
+    app: ["@babel/polyfill", "./src/js/main.js"],
   },
   output: {
     path: path.resolve(__dirname, "docs"),
@@ -49,7 +49,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       filename: "html/index.html",
-      template: "./src/index.html",
+      template: "./src/views/index.html",
       minify: {
         collapseWhitespace: true,
         removeComments: true,
@@ -61,7 +61,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       filename: "html/team.html",
-      template: "./src/team.html",
+      template: "./src/views/team.html",
       minify: {
         collapseWhitespace: true,
         removeComments: true,
@@ -73,7 +73,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       filename: "html/whatIsGeothermalEnergy.html",
-      template: "./src/whatIsGeothermalEnergy.html",
+      template: "./src/views/whatIsGeothermalEnergy.html",
       minify: {
         collapseWhitespace: true,
         removeComments: true,
@@ -85,7 +85,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       filename: "html/aimsAndBackground.html",
-      template: "./src/aimsAndBackground.html",
+      template: "./src/views/aimsAndBackground.html",
       minify: {
         collapseWhitespace: true,
         removeComments: true,

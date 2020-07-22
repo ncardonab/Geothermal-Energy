@@ -1,4 +1,4 @@
-import "./styles.css";
+import "../styles/styles.css";
 
 document.addEventListener("DOMContentLoaded", renderNews);
 
@@ -79,7 +79,6 @@ function fetchNewsFrom(endpoint) {
         "https://geo-energy-api.herokuapp.com/continents"
       );
       const { continents } = await response.json();
-      console.log("Continents", continents);
 
       if (event.target.className.includes("america")) {
         event.target.style.backgroundColor = "rgba(223, 133, 67, 1)";
