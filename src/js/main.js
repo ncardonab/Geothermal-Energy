@@ -258,7 +258,7 @@ function fetchNewsFrom(endpoint) {
     const capitalize = ([firstletter, ...rest]) => {
       return firstletter.toUpperCase() + rest.join("");
     };
-    const profilePhoto = `../images/${researcher.name} ${researcher.lastname} ${researcher.currentMembershipCountry}.png`;
+    const profilePhoto = `../../public/img/${researcher.name} ${researcher.lastname} ${researcher.currentMembershipCountry}.png`;
     const pillsContainer = doc.createElement("div");
 
     researcher.keywords
@@ -374,7 +374,7 @@ function renderCountryButton({ name, id }) {
   const countryText = document.createElement("div.lead");
   const countryBtn = document.createElement("div");
 
-  flag.setAttribute("src", `../images/${name}.png`);
+  flag.setAttribute("src", `../../public/img/${name}.png`);
   flag.className = "rounded-flag m-1";
 
   countryBtn.setAttribute("type", "button");
