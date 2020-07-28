@@ -1,0 +1,40 @@
+{
+  "photos": [
+    {
+      "id": 1,
+      "name": "Villarica Volcano",
+      "image": "../images/Villarica Volcano.jpg",
+      "description": "Such raw energy. Scary energy. But very useful. This is the Villarica Volcano in March 2015 near Villarica, La Araucanía, Chile."
+    },
+    {
+      "id": 2,
+      "name": "Indonesia",
+      "image": "../images/Indonesia.jpg",
+      "description": "Indonesia is facing some delays in renewable energy deployment with construction being hampered by the convid-19 situation"
+    },
+    {
+      "id": 3,
+      "name": "Ecohuerta",
+      "image": "../images/Ecohuerta.jpg",
+      "description": "Nuestra Ecohuerta #UdeMedellín nutre a nuestros vecinos menos favorecidos de Belén durante la Cuarentena. Conoce esta iniciativa aquí: http://bit.ly/DonacionUdeMedellin"
+    },
+    {
+      "id": 4,
+      "name": "IGCP Talk",
+      "image": "../images/IGCP Talk.jpg",
+      "description": "Please join a talk about #IGCP 636 next Friday (24 April). The talk is part of #LEARN_GEOTHERMIA, an initiative by @AGEOCOL in collaboration with AulaTIC of @UdeMedellin_"
+    },
+    {
+      "id": 5,
+      "name": "RENAG2019",
+      "image": "../images/RENAG2019.jpg",
+      "description": "4 Reunión Nacional de Geotermia RENAG2019 Universidad de Medellín 25-29 de noviembre http://renagcolombia.org"
+    },
+    {
+      "id": 6,
+      "name": "Representación en el GRC por estudiantes de ingeniería ambiental",
+      "image": "../images/representacionGRCIngenieriaAmbiental.jpg",
+      "description": "La #UdeMedellín está representada en el GRC con un capitulo estudiantil al cual, actualmente, pertenecen 7 estudiantes del programa de Ingeniería Ambiental  ¡Felicitaciones!"
+    }
+  ]
+}
