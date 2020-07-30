@@ -51,16 +51,6 @@
       "keywords": "Geothermal energy, Deep Drilling, Campi Flegrei Deep Drilling, Fiber optic sensors, Radiogenic isotopes, Environmental geochemistry"
     },
     {
-      "name": "Madelaine",
-      "lastname": "Constance",
-      "currentMembershipCountry": "United Kingdom",
-      "isLeader": false,
-      "isSecretary": false,
-      "linkedIn": "https://linkedin.com/in/madelainecherieconstance",
-      "currentInstitution": "",
-      "keywords": "Geology, Geothermal, Exploration, Energy, Geophysics, Geochemistry"
-    },
-    {
       "name": "Pablo",
       "lastname": "Aguilera",
       "currentMembershipCountry": "New Zealand",
@@ -69,6 +59,16 @@
       "linkedIn": "https://www.linkedin.com/in/jpabustos/",
       "currentInstitution": "University of Auckland, Faculty of Science, School of Environment",
       "keywords": "Colombia, geophysics, microseismicity, rock physics, project's financial assessment"
+    },
+    {
+      "name": "Ludmila",
+      "lastname": "Adam",
+      "currentMembershipCountry": "New Zealand",
+      "isLeader": false,
+      "isSecretary": false,
+      "linkedIn": "https://www.auckland.ac.nz/en/science/about-the-faculty/school-of-environment.html",
+      "currentInstitution": "University of Auckland, Faculty of Science, School of Environment",
+      "keywords": "geophysics, rock physics, petrophysics, rock-fluid interaction"
     },
     {
       "name": "Carlo",
@@ -81,14 +81,24 @@
       "keywords": "Numerical Simulation, High Performance Computing, Geomechanics"
     },
     {
-      "name": "Ludmila",
-      "lastname": "Adam",
-      "currentMembershipCountry": "New Zealand",
+      "name": "Pietro",
+      "lastname": "Teatini",
+      "currentMembershipCountry": "Italy",
       "isLeader": false,
       "isSecretary": false,
-      "linkedIn": "https://www.auckland.ac.nz/en/science/about-the-faculty/school-of-environment.html",
-      "currentInstitution": "University of Auckland, Faculty of Science, School of Environment",
-      "keywords": "geophysics, rock physics, petrophysics, rock-fluid interaction"
+      "linkedIn": "http://www.dmsa.unipd.it/~teatini",
+      "currentInstitution": "Università di Padova",
+      "keywords": "numerical modelling, geomechanics, fault reactivation, fluid injection and withdrawal, land subsidence"
+    },
+    {
+      "name": "Madelaine",
+      "lastname": "Constance",
+      "currentMembershipCountry": "United Kingdom",
+      "isLeader": false,
+      "isSecretary": false,
+      "linkedIn": "https://linkedin.com/in/madelainecherieconstance",
+      "currentInstitution": "",
+      "keywords": "Geology, Geothermal, Exploration, Energy, Geophysics, Geochemistry"
     },
     {
       "name": "Jacqueline",
@@ -179,16 +189,6 @@
       "linkedIn": "https://www.linkedin.com/in/salima-ouali-b46a8780/",
       "currentInstitution": "Centre de développement des énergies renouvelables",
       "keywords": "Geophysics for geothermal exploration, hydrogeology, geochemistry of Algerian thermal waters"
-    },
-    {
-      "name": "Pietro",
-      "lastname": "Teatini",
-      "currentMembershipCountry": "Italy",
-      "isLeader": false,
-      "isSecretary": false,
-      "linkedIn": "http://www.dmsa.unipd.it/~teatini",
-      "currentInstitution": "Università di Padova",
-      "keywords": "numerical modelling, geomechanics, fault reactivation, fluid injection and withdrawal, land subsidence"
     },
     {
       "name": "Noureddine",
