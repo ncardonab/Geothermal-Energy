@@ -1,0 +1,264 @@
+{
+  "researchers": [
+    {
+      "name": "Daniela",
+      "lastname": "Blessent",
+      "currentMembershipCountry": "Colombia",
+      "isLeader": true,
+      "isSecretary": false,
+      "linkedIn": "https://linkedin.com/in/daniela-blessent-533801aa",
+      "currentInstitution": "Universidad de Medellin | Ageocol",
+      "keywords": "Numerical modeling, Groundwater flow and heat transfer, Fractured rock hydrogeology, Virtual education"
+    },
+    {
+      "name": "Jasmin",
+      "lastname": "Raymond",
+      "currentMembershipCountry": "Canada",
+      "isLeader": true,
+      "isSecretary": false,
+      "linkedIn": "https://linkedin.com/in/jasminraymond",
+      "currentInstitution": "INRS (Institutnational de la recherche scientifique)",
+      "keywords": "Hydrogeology, thermal response tests (TRT), geothermal potential assessment"
+    },
+    {
+      "name": "Linda",
+      "lastname": "Daniele",
+      "currentMembershipCountry": "Chile",
+      "isLeader": true,
+      "isSecretary": false,
+      "linkedIn": "https://linkedin.com/in/linda-daniele-9a35bb39",
+      "currentInstitution": "Andean Geothermal Center of Excellence (CEGA) – Universidad de Chile",
+      "keywords": "Hydrogeochemistry, Hydrogeology, Reactive transport models"
+    },
+    {
+      "name": "Mar",
+      "lastname": "Alcaraz",
+      "currentMembershipCountry": "Argentina",
+      "isLeader": true,
+      "isSecretary": false,
+      "linkedIn": "https://linkedin.com/in/mar-alcaraz-1b5a3826",
+      "currentInstitution": "Instituto de Hidrología de Llanuras \"Dr. Eduardo Jorge Usunoff\" IHLLA",
+      "keywords": "Civil engineering, Hydrogeology, Shallow geothermal energy"
+    },
+    {
+      "name": "Renato",
+      "lastname": "Somma",
+      "currentMembershipCountry": "Italy",
+      "isLeader": false,
+      "isSecretary": true,
+      "linkedIn": "https://linkedin.com/in/renato-somma-2a4180101",
+      "currentInstitution": "Istituto Nazionale di Geofisica e Vulcanologia INGV, Osservatorio Vesuviano",
+      "keywords": "Geothermal energy, Deep Drilling, Campi Flegrei Deep Drilling, Fiber optic sensors, Radiogenic isotopes, Environmental geochemistry"
+    },
+    {
+      "name": "Pablo",
+      "lastname": "Aguilera",
+      "currentMembershipCountry": "New Zealand",
+      "isLeader": false,
+      "isSecretary": false,
+      "linkedIn": "https://www.linkedin.com/in/jpabustos/",
+      "currentInstitution": "University of Auckland, Faculty of Science, School of Environment",
+      "keywords": "Colombia, geophysics, microseismicity, rock physics, project's financial assessment"
+    },
+    {
+      "name": "Ludmila",
+      "lastname": "Adam",
+      "currentMembershipCountry": "New Zealand",
+      "isLeader": false,
+      "isSecretary": false,
+      "linkedIn": "https://www.auckland.ac.nz/en/science/about-the-faculty/school-of-environment.html",
+      "currentInstitution": "University of Auckland, Faculty of Science, School of Environment",
+      "keywords": "geophysics, rock physics, petrophysics, rock-fluid interaction"
+    },
+    {
+      "name": "Carlo",
+      "lastname": "Janna",
+      "currentMembershipCountry": "Italy",
+      "isLeader": false,
+      "isSecretary": false,
+      "linkedIn": "https://linkedin.com/in/carlo-janna-93448416",
+      "currentInstitution": "Università di Padova",
+      "keywords": "Numerical Simulation, High Performance Computing, Geomechanics"
+    },
+    {
+      "name": "Pietro",
+      "lastname": "Teatini",
+      "currentMembershipCountry": "Italy",
+      "isLeader": false,
+      "isSecretary": false,
+      "linkedIn": "http://www.dmsa.unipd.it/~teatini",
+      "currentInstitution": "Università di Padova",
+      "keywords": "numerical modelling, geomechanics, fault reactivation, fluid injection and withdrawal, land subsidence"
+    },
+    {
+      "name": "Madelaine",
+      "lastname": "Constance",
+      "currentMembershipCountry": "United Kingdom",
+      "isLeader": false,
+      "isSecretary": false,
+      "linkedIn": "https://linkedin.com/in/madelainecherieconstance",
+      "currentInstitution": "",
+      "keywords": "Geology, Geothermal, Exploration, Energy, Geophysics, Geochemistry"
+    },
+    {
+      "name": "Jacqueline",
+      "lastname": "López",
+      "currentMembershipCountry": "Colombia",
+      "isLeader": false,
+      "isSecretary": false,
+      "linkedIn": "https://investigaciones-pure.udem.edu.co/es/persons/idalia-jacqueline-l%C3%B3pez-s%C3%A1nchez",
+      "currentInstitution": "Universidad de Medellin",
+      "keywords": "Geothermal potential assessment, Geological mapping, Nevado del Ruiz"
+    },
+    {
+      "name": "Claudia",
+      "lastname": "Alfaro",
+      "currentMembershipCountry": "Colombia",
+      "isLeader": false,
+      "isSecretary": false,
+      "linkedIn": "http://hidrotermales.sgc.gov.co/invtermales/",
+      "currentInstitution": "Colombian Geological Survey (SGC)",
+      "keywords": "Magmatic and hydrothermal fluids geochemistry, Conductive heat flow, Geothermal exploration, Descriptive conceptual geothermal models"
+    },
+    {
+      "name": "René",
+      "lastname": "Therrien",
+      "currentMembershipCountry": "Canada",
+      "isLeader": false,
+      "isSecretary": false,
+      "linkedIn": "https://www.ggl.ulaval.ca/departement-et-professeurs/personnel-et-professeurs/professeurs-reguliers/professeur/show/therrien-rene/",
+      "currentInstitution": "Université Laval",
+      "keywords": "Numerical Modeling, Groundwater-surface water interactions, Fractured rock hydrogeology, Geothermics, Water Resources Management"
+    },
+    {
+      "name": "Fernando",
+      "lastname": "Rivas",
+      "currentMembershipCountry": "Mexico",
+      "isLeader": false,
+      "isSecretary": false,
+      "linkedIn": "https://www.linkedin.com/in/fernando-rivas-cruz/",
+      "currentInstitution": "Instituto Nacional de Electricidad y Energías Limpias del INEEL",
+      "keywords": "Mechatronic Automation, Ground Source Heat Pumps and Geothermal Energy"
+    },
+    {
+      "name": "Ignasi",
+      "lastname": "Herms",
+      "currentMembershipCountry": "Spain",
+      "isLeader": false,
+      "isSecretary": false,
+      "linkedIn": "https://es.linkedin.com/in/ignasi-herms-96143033",
+      "currentInstitution": "Institut Cartogràfic i Geològic de Catalunya (ICGC) (Geological Survey of Catalonia)",
+      "keywords": "Geothermal systems, mapping, flow-transport-heat modelling, testing and lab, monitoring networks, code development"
+    },
+    {
+      "name": "José",
+      "lastname": "Acuña",
+      "currentMembershipCountry": "Sweden",
+      "isLeader": false,
+      "isSecretary": false,
+      "linkedIn": "https://www.energy.kth.se/applied-thermodynamics/project-groups/geoenergy",
+      "currentInstitution": "KTH Royal Institute of Technology",
+      "keywords": "Ground Source Heat Pumps, Distributed Temperature Sensing, Borehole Heat Exchangers"
+    },
+    {
+      "name": "Oscar",
+      "lastname": "Llamosa",
+      "currentMembershipCountry": "Australia",
+      "isLeader": false,
+      "isSecretary": false,
+      "linkedIn": "https://www.linkedin.com/in/oscarllamosa/",
+      "currentInstitution": "URGE ENERGY PTY LTD",
+      "keywords": "New Energies, Subsurface Technologies, Outreach & Communication"
+    },
+    {
+      "name": "Hejuan",
+      "lastname": "Liu",
+      "currentMembershipCountry": "China",
+      "isLeader": false,
+      "isSecretary": false,
+      "linkedIn": "http://english.whrsm.cas.cn/",
+      "currentInstitution": "Institute of Rock and Soil Mechanics, Chinese Academy of Sciences",
+      "keywords": "numerical simulation, hydraulic fracturing, acid treatment, HDR"
+    },
+    {
+      "name": "Salima",
+      "lastname": "Ouali",
+      "currentMembershipCountry": "Argelia",
+      "isLeader": false,
+      "isSecretary": false,
+      "linkedIn": "https://www.linkedin.com/in/salima-ouali-b46a8780/",
+      "currentInstitution": "Centre de développement des énergies renouvelables",
+      "keywords": "Geophysics for geothermal exploration, hydrogeology, geochemistry of Algerian thermal waters"
+    },
+    {
+      "name": "Noureddine",
+      "lastname": "Benaouda",
+      "currentMembershipCountry": "Argelia",
+      "isLeader": false,
+      "isSecretary": false,
+      "linkedIn": "https://www.researchgate.net/profile/BENAOUDA_Nour-Eddine",
+      "currentInstitution": "Centre de développement des énergies renouvelables",
+      "keywords": "Geothermal Energy, Direct application, Ground source heat pump, Aquaculture, Agriculture"
+    },
+    {
+      "name": "Abdelhakim",
+      "lastname": "Djebara",
+      "currentMembershipCountry": "Argelia",
+      "isLeader": false,
+      "isSecretary": false,
+      "linkedIn": "https://www.researchgate.net/profile/Abdelhakim_Djebara",
+      "currentInstitution": "École Nationale polytechnique de Constantine",
+      "keywords": ""
+    },
+    {
+      "name": "Abdelkader",
+      "lastname": "Filali",
+      "currentMembershipCountry": "Argelia",
+      "isLeader": false,
+      "isSecretary": false,
+      "linkedIn": "https://www.researchgate.net/profile/Abdelkader_Filali",
+      "currentInstitution": "École Nationale polytechnique de Constantine",
+      "keywords": ""
+    },
+    {
+      "name": "Mohammed",
+      "lastname": "Moundji",
+      "currentMembershipCountry": "Argelia",
+      "isLeader": false,
+      "isSecretary": false,
+      "linkedIn": "https://www.linkedin.com/in/moundji-hadjiat-7392361b/",
+      "currentInstitution": "Centre de développementdes énergies renouvelables",
+      "keywords": "Geothermal Energy, Thermoelectric generator, Heat pump, Agriculture"
+    },
+    {
+      "name": "Hamza",
+      "lastname": "Semmari",
+      "currentMembershipCountry": "Argelia",
+      "isLeader": false,
+      "isSecretary": false,
+      "linkedIn": "https://www.researchgate.net/profile/Hamza_Semmari",
+      "currentInstitution": "École Nationale polytechnique de Constantine",
+      "keywords": "Applied thermodynamic, advanced energy system, Heatpumps, ORC, Energy andexergy analysis"
+    },
+    {
+      "name": "Sofiane",
+      "lastname": "Aberkane",
+      "currentMembershipCountry": "Argelia",
+      "isLeader": false,
+      "isSecretary": false,
+      "linkedIn": "https://www.researchgate.net/profile/Sofiane_Aberkane",
+      "currentInstitution": "École Nationale polytechnique de Constantine",
+      "keywords": ""
+    },
+    {
+      "name": "Saeid",
+      "lastname": "Mohammadzadeh",
+      "currentMembershipCountry": "Japan",
+      "isLeader": false,
+      "isSecretary": false,
+      "linkedIn": "https://www.linkedin.com/in/saeid-mohammadzadeh-bina-24070a76/",
+      "currentInstitution": "Akita University",
+      "keywords": "Energy modeling, Renewable Energy, Geothermal Energy, Heat Pump, Resource Assessment"
+    }
+  ]
+}

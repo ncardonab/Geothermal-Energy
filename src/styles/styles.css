@@ -1,0 +1,689 @@
+* {
+  --primary-color-bg: rgba(223, 133, 67, 0.69);
+  --primary-color-text: rgb(223, 133, 67);
+  --secondary-color: rgb(127, 148, 169);
+  --tertiary-color: rgb(241, 241, 176);
+  --quaternary-color: rgb(157, 37, 3);
+  --light-color: rgba(255, 255, 255, 1);
+  --dark-color: rgba(0, 0, 0, 1);
+}
+
+/* Header */
+.navbar-head {
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.876);
+}
+
+.navbar-brand {
+  font-size: 17.5px;
+}
+
+.nav-item {
+  font-size: 14px;
+}
+
+.btn {
+  border-radius: 3.5px;
+  font-size: 14px;
+}
+
+.jumbotron {
+  height: 100vh;
+  background-image: url("../../public/img/Cascada.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.display-4 {
+  font-size: 49px;
+}
+
+.light-text {
+  font-size: 14px;
+}
+
+.lead {
+  font-size: 17.5px;
+}
+
+h1 {
+  font-size: 35px;
+  font-weight: 500;
+  /* margin-top: 14px;
+  margin-bottom: 14px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px; */
+}
+
+h3 {
+  font-size: 28px;
+  font-weight: 100;
+}
+
+h4 {
+  font-size: 21px;
+  font-weight: 500;
+}
+
+.main {
+  margin-top: 120px;
+  margin-bottom: 79px;
+}
+
+.container {
+  max-width: 1240px;
+}
+
+.badge-pill {
+  font-size: 10.5px;
+  font-weight: 400;
+}
+
+/* News Section */
+
+.news-cards-title {
+  background-color: var(--primary-color-bg);
+  border-radius: 10px;
+  width: 330px;
+  height: 32px;
+}
+
+.cards-container {
+  width: 90%;
+  position: absolute;
+  bottom: 0px;
+}
+
+.news-card-1 {
+  border-top-left-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.308);
+  transition: ease all 0.3s;
+  height: 178px;
+}
+
+.news-card-2 {
+  background-color: rgba(255, 255, 255, 0.308);
+  transition: ease all 0.3s;
+  height: 178px;
+}
+
+.news-card-3 {
+  border-top-right-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.308);
+  transition: ease all 0.3s;
+  height: 178px;
+}
+
+.news-card-1:hover .light-text {
+  color: var(--dark-color);
+  transition: ease all 1s;
+}
+
+.news-card-2:hover .light-text {
+  color: var(--dark-color);
+  transition: ease all 1s;
+}
+
+.news-card-3:hover .light-text {
+  color: var(--dark-color);
+  transition: ease all 1s;
+}
+
+/* Cards hover */
+.news-card-1:hover {
+  background-color: rgba(255, 255, 255, 0.692);
+  transform: scale(1.1);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.news-card-2:hover {
+  background-color: rgba(255, 255, 255, 0.692);
+  transform: scale(1.1);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.news-card-3:hover {
+  background-color: rgba(255, 255, 255, 0.692);
+  transform: scale(1.1);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+/* Notch hover */
+.news-card-1:hover ~ .notch {
+  background-color: rgb(255, 255, 255);
+  transition: ease all 0.3s;
+  transform: translateY(-8px);
+}
+
+.news-card-2:hover ~ .notch {
+  background-color: rgb(255, 255, 255);
+  transition: ease all 0.3s;
+  transform: translateY(-8px);
+}
+
+.news-card-3:hover ~ .notch {
+  background-color: rgb(255, 255, 255);
+  transition: ease all 0.3s;
+  transform: translateY(-8px);
+}
+
+.new-img {
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  height: 130px;
+  width: 162px;
+  margin-left: 10px;
+}
+
+.new-img > img {
+  height: 130px;
+  width: 192px;
+}
+
+.notch {
+  width: 100px;
+  height: 9px;
+  background-color: rgba(255, 255, 255, 0);
+  position: absolute;
+  top: 0%;
+  top: -6px;
+  left: 170px;
+  border-radius: 8px;
+  transition: ease all 0.3s;
+  z-index: 2;
+}
+
+/* Section 1 | What is Geothermal Energy?  */
+.section-1 {
+  height: 450px;
+}
+
+/* Section 2 | Background */
+.section-2 {
+  height: 400px;
+  background-image: url(../../public/img/background-fog.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.bg-blur {
+  position: absolute;
+  height: 156px;
+  transform: translateY(176px);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.section-2-container {
+  height: 400px;
+}
+
+.btn {
+  z-index: 10;
+}
+
+/* Section 3 | Aims */
+.section-3 {
+  height: 556px;
+}
+
+/* Section 4 | Projects & Institutions*/
+.section-4 {
+  height: 620px;
+}
+
+.involved-img {
+  height: 200px;
+}
+
+/* Partners */
+.partner.igcp {
+  width: 100px;
+  height: 126px;
+}
+
+.partner.iugs {
+  width: 161px;
+  height: 156px;
+}
+
+.partner.unesco {
+  width: 159px;
+  height: 116px;
+}
+
+.institutions {
+  width: 232px;
+  height: 100px;
+}
+
+/* Footer | Contact & Social Media*/
+.footer {
+  height: 30vh;
+}
+
+.line {
+  border-bottom: 1px solid #ffffff;
+  width: 75vw;
+}
+
+/* View more button styles */
+.view-more-btn {
+  border-radius: 25px;
+  padding: 2px 8px 2px 4px;
+}
+
+.view-more-dark {
+  background-color: rgba(71, 71, 71, 0.13);
+}
+
+.view-more-light {
+  background-color: rgba(212, 212, 212, 0.73);
+}
+
+.view-more-dark:hover {
+  background-color: rgba(71, 71, 71, 0.25);
+}
+
+.view-more-light:hover {
+  background-color: rgba(212, 212, 212, 1);
+}
+
+.view-more-icon {
+  background: url("../../public/img/view_more.svg");
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  transform: translateY(2px);
+}
+
+.view-more-text {
+  display: inline-block;
+  margin-bottom: 0;
+  transform: translateY(-2px);
+}
+
+/* Colors */
+
+.text-primary-color {
+  color: var(--primary-color-text);
+}
+
+.text-secondary-color {
+  color: var(--secondary-color);
+}
+
+.btn-primary-color {
+  background-color: var(--primary-color-text);
+  color: white;
+  border: none;
+  transition: ease all 0.4s;
+}
+
+.btn-primary-color:hover {
+  background-color: var(--primary-color-bg);
+  color: white;
+}
+
+.btn-secondary-color {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.light-text {
+  color: var(--light-color);
+  transition: ease all 0.5s;
+}
+
+.dark-text {
+  color: var(--dark-color);
+  transition: ease all 0.5s;
+}
+
+/* Team and Members */
+
+/* Leaders */
+.leaders {
+  height: 100vh;
+  background-color: #474747;
+}
+
+.researcher-img-container {
+  transform: translateY(-50px);
+}
+
+.carousel-indicators li {
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.carousel-control-prev-icon {
+  height: 31px;
+  width: 18.9px;
+  background-image: url("../../public/img/Prev.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carousel-control-next-icon {
+  height: 31px;
+  width: 18.9px;
+  background-image: url("../../public/img/Next.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bottom-line {
+  position: absolute;
+  border-bottom: 1px solid #707070;
+  width: 85%;
+  bottom: 0;
+}
+
+.secretary {
+  height: 75vh;
+  background-image: url("../../public/img/Vesuvio.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.temporary {
+  height: 100vh;
+  background-color: black;
+}
+
+/* Section 2 | Secretary */
+.secretary-info {
+  transform: translateY(160px);
+}
+
+.secretary-photo {
+  height: 100px;
+  width: 100px;
+}
+
+.bg-blur-secretary {
+  height: 25vh;
+}
+
+.country-pill {
+  position: absolute;
+  width: 400px;
+  background-color: rgba(28, 28, 28, 1);
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  right: 0;
+}
+
+.country-pill > div > p {
+  line-height: 40px;
+}
+
+.country-pill > div > img {
+  height: 40px;
+  width: 40px;
+}
+
+/* Section 3 | Involved institutions around the world */
+.institutions-section {
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+.continent-btn {
+  width: 160px;
+  background-color: #585858;
+  border-style: none;
+}
+
+.country-btn {
+  background-color: #585858;
+  border-style: none;
+}
+
+.country-btn:hover {
+  background-color: #7e7e7e;
+}
+
+.rounded-flag {
+  position: absolute;
+  height: auto;
+  width: auto;
+  max-width: 25px;
+  max-height: 25px;
+  border-radius: 50%;
+  bottom: 4px;
+  left: 5px;
+}
+
+.card {
+  /* Bootstrap class modified */
+  border-style: none;
+}
+
+.card-img-top {
+  border-style: none;
+}
+
+.institution-card {
+  width: 256.75px;
+  height: 236px;
+  border-radius: 15px;
+  transition: ease all 0.3s;
+}
+
+.institution-card:hover {
+  transform: scale(1.03);
+  transition: ease all 0.3s;
+}
+
+.institution-card-img-top {
+  height: 161.24px;
+  width: 256.75px;
+  background-color: #474747;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  box-shadow: 2px 2px 18px rgba(0, 0, 0, 0.2);
+}
+
+.institution-card-body {
+  height: 85px;
+  background-color: #e6e6e6;
+  border-radius: 15px;
+  transform: translateY(-13px);
+  transition: ease all 0.3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.institution-card-body:hover {
+  transform: scale(1.06);
+  transition: ease all 0.3s;
+  cursor: pointer;
+}
+
+.institution-card-body:hover > .card-notch {
+  background-color: rgb(255, 255, 255);
+  transition: ease all 0.3s;
+  transform: translateY(0px);
+}
+
+.logo {
+  position: absolute;
+  width: auto;
+  max-width: 45px;
+  height: auto;
+  max-height: 45px;
+  /* border-radius: 50%; */
+}
+
+.card-notch {
+  width: 100px;
+  height: 9px;
+  background-color: rgba(255, 255, 255, 0);
+  position: absolute;
+  top: 0%;
+  top: -6px;
+  left: 78.375px;
+  border-radius: 8px;
+  transition: ease all 0.3s;
+  z-index: 2;
+}
+
+.card-title {
+  font-size: 14px;
+  font-weight: 300;
+  color: #030303;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Section 4 | Researchers Profiles */
+.researchers-section {
+  min-height: 628px;
+  background-color: #f4f4f7;
+}
+
+.researcher-img {
+  width: 233.84px;
+  height: 259.73;
+  border-radius: 11px;
+  border-style: none;
+}
+
+.fa-linkedin {
+  color: #878787;
+  cursor: pointer;
+  transition: ease all 0.3s;
+}
+
+.fa-linkedin:hover {
+  transform: scale(1.02);
+  transition: ease all 0.3s;
+}
+
+.previous-icon {
+  background: url("../../public/img/Exclusion 1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 25px;
+  width: 25px;
+  display: inline-block;
+  transform: translateY(2px);
+  cursor: pointer;
+  transition: ease all 0.3s;
+}
+
+.previous-icon:hover {
+  transform: scale(1.02);
+  transition: ease all 0.3s;
+}
+
+.next-icon {
+  background: url("../../public/img/Exclusion 2.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 25px;
+  width: 25px;
+  display: inline-block;
+  transform: translateY(2px);
+  cursor: pointer;
+  transition: ease all 0.3s;
+}
+
+.next-icon:hover {
+  transform: scale(1.02);
+  transition: ease all 0.3s;
+}
+
+/* What is Geothermal Energy? */
+
+/* Header | Section 1 */
+.geothermal-energy-jumbotron {
+  height: 100vh;
+  background-image: url("../../public/img/brown-soil-1437337.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.background-blur {
+  background-color: rgba(255, 255, 255, 0.6);
+  height: 225px;
+  width: 90%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  position: absolute;
+  bottom: 0;
+}
+
+/* Main objetive | Section 2*/
+.geothermal-energy-container-section-2 {
+  height: 68.54%;
+  background-color: rgb(255, 255, 255);
+}
+
+/* Aims | Section 3 */
+.geothermal-energy-container-section-3 {
+  height: 67.32%;
+  background-color: #f4f4f7;
+}
+
+.geothermal-energy-section-3-icon {
+  width: 90.18px;
+  height: 77.62px;
+}
+
+/* Aims & Background */
+
+/* header */
+.aims-and-background-jumbotron {
+  height: 100vh;
+  background-image: url("../../public/img/EbpadfnWAAAof5e.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* section 1 */
+.aims-and-background-section-1-container {
+  height: 72.64%;
+}
+
+.mountain-icon {
+  height: 123;
+  width: 123;
+}
+
+/* section 2 */
+.aims-and-background-section-2-container {
+  height: 85.71%;
+  background-color: #f4f4f7;
+}
+
+/* section 3 */
+.aims-and-background-section-3-container {
+  height: 85.71%;
+  background-image: url("../../public/img/Section_3_Background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* section 4 */
+.aims-and-background-section-4-container {
+  height: 85.71%;
+  background-color: #ffffff;
+}
