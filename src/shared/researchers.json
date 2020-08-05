@@ -128,7 +128,7 @@
       "isSecretary": false,
       "linkedIn": "https://www.ggl.ulaval.ca/departement-et-professeurs/personnel-et-professeurs/professeurs-reguliers/professeur/show/therrien-rene/",
       "currentInstitution": "Université Laval",
-      "keywords": "Numerical Modeling, Groundwater-surface water interactions, Fractured rock hydrogeology, Geothermics, Water Resources Management"
+      "keywords": "Numerical Modeling, Geothermics, Groundwater-surface water interactions, Fractured rock hydrogeology,  Water Resources Management"
     },
     {
       "name": "Fernando",
@@ -138,7 +138,7 @@
       "isSecretary": false,
       "linkedIn": "https://www.linkedin.com/in/fernando-rivas-cruz/",
       "currentInstitution": "Instituto Nacional de Electricidad y Energías Limpias del INEEL",
-      "keywords": "Mechatronic Automation, Ground Source Heat Pumps and Geothermal Energy"
+      "keywords": "Mechatronic Automation, Renewable energy, Ground Source Heat Pumps and Geothermal Energy"
     },
     {
       "name": "Ignasi",
@@ -168,7 +168,17 @@
       "isSecretary": false,
       "linkedIn": "https://www.linkedin.com/in/oscarllamosa/",
       "currentInstitution": "URGE ENERGY PTY LTD",
-      "keywords": "New Energies, Subsurface Technologies, Outreach & Communication"
+      "keywords": "Reservoir geology, subsurface technologies, outreach & communications, commercial development"
+    },
+    {
+      "name": "Claudia",
+      "lastname": "Zoccarato",
+      "currentMembershipCountry": "Italy",
+      "isLeader": false,
+      "isSecretary": false,
+      "linkedIn": "https://www.linkedin.com/in/claudia-zoccarato-56152740/",
+      "currentInstitution": "University of Padova",
+      "keywords": "numerical and inverse modelling, geomechanics, data assimilation"
     },
     {
       "name": "Hejuan",
